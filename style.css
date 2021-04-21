@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Rubik&display=swap');
 
 section {
-  border: 1px solid black;
+  border: 1px solid var();
 }
 
 * {
@@ -17,8 +17,8 @@ html {
 }
 
 :root {
-  --primary-color: #333;
-  --secondary-color: #fff;
+  --primary-color: rgb(51, 51, 51);
+  --secondary-color: rgb(255, 255, 255);
   --font-family: 'Rubik', sans-serif;
 }
 
@@ -28,17 +28,99 @@ html {
 }
 
 .theme {
-  --primary-color: #fff;
-  --secondary-color: #333;
-  --theme-color: linear-gradient(to right, #434343 0%, #000 100%);
+  --primary-color: rgb(255, 255, 255);
+  --secondary-color: rgb(51, 51, 51);
+  --theme-color: linear-gradient(to right, rgb(67, 67, 67) 0%, #000 100%);
+}
+
+/* HOME BUTTON */
+
+.logo {
+  font-size: 1.6rem;
+  background-color: transparent;
+  position: fixed;
+  margin: 23px 40px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.logo:hover {
+  transform: scale(1.2);
+  transition: 0.5s;
+}
+
+/* NAV BAR OPEN */
+
+.toggle {
+  right: 0;
+  margin: 23px 40px;
+  font-size: 2.5rem;
+  background-color: transparent;
+  position: fixed;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.toggle:hover {
+  transform: scale(1.2);
+  transition: 0.5s;
+}
+
+/* NAV BAR */
+
+.navigation {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 10vh;
+  z-index: 20;
+  padding-left: 100px;
+  background-color: var(--secondary-color);
+}
+
+.navigation.close {
+  display: none;
+}
+
+.navigation ul {
+  display: grid;
+  grid-template-columns: 10% 10% 10% 10% 30% 5% 5%;
+  align-items: center;
+  justify-content: end;
+  padding-top: 3vh;
+}
+
+.navigation ul li {
+  list-style: none;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+#theme-toggle {
+  cursor: pointer;
+  font-size: 1.8rem;
+  float: right;
+}
+
+/* NAV BAR CLOSE */
+
+.fa-times {
+  cursor: pointer;
+  font-size: 2rem;
+  margin-left: 30px;
 }
 
 /* INTRO SETUP */
 
 .intro {
-  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 800px;
+  min-height: 100vh;
   background: linear-gradient(
     135deg,
     var(--secondary-color) 0%,
@@ -47,30 +129,36 @@ html {
 }
 
 .intro h1 {
-  position: absolute;
   top: 50%;
   left: 45%;
   font-weight: bold;
   font-size: 50px;
+  text-shadow: 1px 1px 3px var(--secondary-color);
+  text-align: center;
 }
 
-.fa-circle {
-  position: absolute;
-  font-size: 23px;
-  color: var(--primary-color);
+.greeting {
+  top: 50%;
+  left: 45%;
+  font-weight: bold;
+  font-size: 50px;
+  text-shadow: 1px 1px 3px var(--secondary-color);
+  text-align: center;
 }
 
 .box div {
   position: absolute;
-  width: 60px;
-  height: 60px;
-  background-color: transparent;
+  width: 22px;
+  height: 22px;
+  border: 1px solid var(--primary-color);
+  border-radius: 50%;
+  background-color: var(--primary-color);
 }
 
 .box div:nth-child(1) {
   top: 12%;
   left: 42%;
-  animation: animate 10s linear infinite;
+  animation: animate 6s linear infinite;
 }
 
 .box div:nth-child(2) {
@@ -86,45 +174,45 @@ html {
 }
 
 .box div:nth-child(4) {
+  top: 20%;
+  left: 60%;
+  animation: animate 15s linear infinite;
+}
+
+.box div:nth-child(5) {
+  top: 67%;
+  left: 10%;
+  animation: animate 6s linear infinite;
+}
+
+.box div:nth-child(6) {
+  top: 80%;
+  left: 70%;
+  animation: animate 12s linear infinite;
+}
+
+.box div:nth-child(7) {
   top: 60%;
   left: 80%;
   animation: animate 15s linear infinite;
 }
 
-.box div:nth-child(5) {
-  top: 80%;
-  left: 70%;
-  animation: animate 3s linear infinite;
-}
-
-.box div:nth-child(6) {
-  top: 32%;
-  left: 42%;
-  animation: animate 10s linear infinite;
-}
-
-.box div:nth-child(7) {
-  top: 32%;
-  left: 42%;
-  animation: animate 10s linear infinite;
-}
-
 .box div:nth-child(8) {
-  top: 49%;
-  left: 33%;
-  animation: animate 10s linear infinite;
+  top: 32%;
+  left: 25%;
+  animation: animate 16s linear infinite;
 }
 
 .box div:nth-child(9) {
   top: 90%;
   left: 25%;
-  animation: animate 10s linear infinite;
+  animation: animate 9s linear infinite;
 }
 
 .box div:nth-child(10) {
   top: 20%;
   left: 80%;
-  animation: animate 10s linear infinite;
+  animation: animate 5s linear infinite;
 }
 
 @keyframes animate {
@@ -134,7 +222,7 @@ html {
   }
 
   100% {
-    transform: scale(1.3) translateY(-60px) rotate(0);
+    transform: scale(1.2) translateY(-50px) rotate(0);
     opacity: 0;
   }
 }
