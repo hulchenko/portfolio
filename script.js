@@ -30,6 +30,10 @@ logo.addEventListener('click', () => {
   window.scrollTo(0, 0);
 });
 
+document.querySelector('#home').addEventListener('click', () => {
+  window.scrollTo(0, 0);
+});
+
 //Typed Animation
 const typed = new Typed(greeting, {
   strings: [
@@ -42,6 +46,7 @@ const typed = new Typed(greeting, {
   showCursor: false,
 });
 
+//Alternative Version
 // var i = 0;
 // var txt = 'Hello!I am Vadym. Welcome to My Portfolio!';
 // var speed = 100;
