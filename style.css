@@ -1,0 +1,14 @@
+section {
+  border: 1px solid black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #111;
+  --secondary-color: #fff;
+}
