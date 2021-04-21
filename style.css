@@ -22,17 +22,28 @@ html {
   --font-family: 'Rubik', sans-serif;
 }
 
-.theme {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
+.container {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
 }
+
+.theme {
+  --primary-color: #fff;
+  --secondary-color: #333;
+  --theme-color: linear-gradient(to right, #434343 0%, #000 100%);
+}
+
 /* INTRO SETUP */
 
 .intro {
   position: absolute;
   width: 100%;
   height: 800px;
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background: linear-gradient(
+    135deg,
+    var(--secondary-color) 0%,
+    var(--primary-color) 100%
+  );
 }
 
 .intro h1 {
@@ -46,7 +57,7 @@ html {
 .fa-circle {
   position: absolute;
   font-size: 23px;
-  color: #333;
+  color: var(--primary-color);
 }
 
 .box div {
