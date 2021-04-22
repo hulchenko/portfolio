@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Rubik&display=swap');
 
-section {
-  border: 1px solid var();
-}
+/* section {
+  border: 1px solid var(--primary-color);
+} */
 
 * {
   margin: 0;
@@ -69,12 +69,6 @@ html {
 #home {
   cursor: pointer;
 }
-
-#home:hover {
-  transform: scale(1.1);
-  text-shadow: 1px 1px 1px var(--primary-color);
-}
-
 /* NAV BAR */
 
 .navigation {
@@ -98,7 +92,7 @@ html {
 
 .navigation ul li a:hover {
   transform: scale(1.1);
-  text-shadow: 1px 1px 1px var(--primary-color);
+  text-shadow: 0px 0px 3px var(--primary-color);
 }
 
 .links {
@@ -106,7 +100,7 @@ html {
   grid-template-columns: 17% 17% 17% 17% 17% 5% 5%;
   align-items: center;
   justify-content: end;
-  padding-top: 3vh;
+  margin-top: 3vh;
 }
 
 a {
@@ -161,6 +155,7 @@ a {
     var(--secondary-color) 0%,
     var(--primary-color) 100%
   );
+  box-shadow: 0px 0px 5px var(--primary-color);
 }
 
 .intro h1 {
@@ -262,6 +257,71 @@ a {
   }
 }
 
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  box-shadow: -2px -2px 20px var(--secondary-color);
+  padding-top: 12vh;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  border-radius: 5px;
+  width: 30%;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0px;
+  box-shadow: 0px 0px 15px var(--primary-color);
+  transition: 0.5s;
+}
+
+.about-container:hover {
+  transform: translateY(-5px);
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  transition: 1.5s;
+}
+
+.about h1 {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  text-shadow: 0px 0px 2px var(--primary-color);
+}
+
+.about h1:before,
+.about h1:after {
+  align-self: center;
+  content: '';
+  border-top: 2px solid;
+  margin: 0 10px 0 0;
+  flex: 1 0 30px;
+  box-shadow: 0px 0px 2px var(--primary-color);
+}
+
+.about h1:after {
+  margin: 0 0 0 10px;
+  box-shadow: 0px 0px 2px var(--primary-color);
+}
+
+.about p {
+  margin-top: 5vh;
+  width: 400px;
+  line-height: 25px;
+  font-weight: 1000;
+}
+
+img {
+  margin-top: 3vh;
+  width: 300px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 15px var(--primary-color);
+}
 /* bright: background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 
     dark: background-image: linear-gradient(to right, #434343 0%, #000 100%); 
