@@ -103,7 +103,7 @@ html {
 
 .links {
   display: grid;
-  grid-template-columns: 10% 10% 10% 10% 30% 5% 5%;
+  grid-template-columns: 17% 17% 17% 17% 17% 5% 5%;
   align-items: center;
   justify-content: end;
   padding-top: 3vh;
@@ -112,6 +112,11 @@ html {
 a {
   color: var(--primary-color);
   text-decoration: none;
+}
+
+#contact {
+  display: flex;
+  align-self: flex-start !important;
 }
 
 #theme-toggle {
