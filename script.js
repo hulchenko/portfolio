@@ -82,6 +82,6 @@ function shadow(e) {
 
   const xDistance = Math.round((x / width) * distance - distance / 2);
   const yDistance = Math.round((y / height) * distance - distance / 2);
-  greeting.style.textShadow = `${xDistance}px ${yDistance}px 20px #fff`;
+  greeting.style.textShadow = `${xDistance}px ${yDistance}px 25px #fff`;
 }
 intro.addEventListener('mousemove', shadow);
