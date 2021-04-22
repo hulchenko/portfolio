@@ -322,9 +322,3 @@ img {
   border-radius: 50%;
   box-shadow: 1px 1px 15px var(--primary-color);
 }
-/* bright: background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-
-    dark: background-image: linear-gradient(to right, #434343 0%, #000 100%); 
-    
-    navbar MAYBE?: background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
-    */
