@@ -69,11 +69,6 @@ html {
   transition: 0.5s;
 }
 
-#home {
-  cursor: pointer;
-}
-/* NAV BAR */
-
 .navigation {
   position: fixed;
   top: 0;
@@ -83,7 +78,10 @@ html {
   background-color: var(--secondary-color);
   transition: 1s;
   box-shadow: 1px 1px 6px var(--primary-color);
+  filter: opacity(95%);
 }
+
+/* NAV BAR */
 
 .navigation ul li {
   list-style: none;
@@ -126,6 +124,10 @@ a {
   text-shadow: 0px 0px 3px var(--primary-color);
 }
 
+#home {
+  cursor: pointer;
+}
+
 /* NAV BAR CLOSE */
 
 .navigation.close {
@@ -165,7 +167,7 @@ a {
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-size: 60px;
+  font-size: 5rem;
   font-family: 'Fredoka One', cursive;
 }
 
@@ -250,6 +252,8 @@ a {
   }
 }
 
+/* ABOUT SECTION  */
+
 .about {
   display: flex;
   flex-direction: column;
@@ -257,7 +261,7 @@ a {
   justify-content: center;
   width: 100%;
   box-shadow: -2px -2px 20px var(--secondary-color);
-  padding-top: 11vh;
+  padding-top: 10vh;
   padding-bottom: 13vh;
 }
 
@@ -266,7 +270,7 @@ a {
   flex-direction: column;
   border: none;
   border-radius: 5px;
-  width: 29rem;
+  width: 40rem;
   align-items: center;
   justify-content: center;
   padding: 22px 0px;
@@ -305,9 +309,9 @@ a {
 }
 
 .about p {
-  margin-top: 5vh;
-  padding: 0 20px;
-  width: 450px;
+  margin-top: 4vh;
+  padding: 0 30px;
+  width: 30rem;
   line-height: 25px;
   font-weight: 1000;
   text-align: justify;
@@ -324,6 +328,47 @@ img {
   text-shadow: 0px 0px 2px var(--primary-color);
 }
 
+/* TOOLS AND SKILLS */
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  height: 100vh;
+}
+
+.skills h1 {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  text-shadow: 0px 0px 2px var(--primary-color);
+  width: 240px;
+}
+
+.skills h1:before,
+.skills h1:after {
+  align-self: center;
+  content: '';
+  border-top: 2px solid;
+  margin: 0 10px 0 0;
+  flex: 1 0 30px;
+  box-shadow: 0px 0px 2px var(--primary-color);
+}
+
+.skills h1:after {
+  margin: 0 0 0 10px;
+  box-shadow: 0px 0px 2px var(--primary-color);
+}
+
+/* MEDIA QUERIES */
 @media screen and (max-width: 1480px) {
   .links {
     display: flex;
