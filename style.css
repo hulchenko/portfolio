@@ -364,6 +364,12 @@ h3 {
   gap: 10px;
   box-shadow: 0px 0px 15px var(--primary-color);
   border-radius: 5px;
+  transition: 1s;
+}
+
+.front-end-card:hover {
+  box-shadow: 0px 0px 0px var(--secondary-color) !important;
+  transition: 2s;
 }
 
 .back-end-card {
@@ -372,17 +378,28 @@ h3 {
   gap: 11px;
   box-shadow: 0px 0px 15px var(--primary-color);
   border-radius: 5px;
+  transition: 1s;
+}
+
+.back-end-card:hover {
+  box-shadow: 0px 0px 0px var(--secondary-color) !important;
+  transition: 2s;
 }
 
 .miscellaneous-card {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
   width: 25rem;
   padding: 50px;
   gap: 10px;
   box-shadow: 0px 0px 15px var(--primary-color);
   border-radius: 5px;
+  transition: 1s;
+}
+
+.miscellaneous-card:hover {
+  box-shadow: 0px 0px 0px var(--secondary-color) !important;
+  transition: 2s;
 }
 
 .skills-container div img {
@@ -425,6 +442,7 @@ img:hover {
   transform: scale(1.5);
   box-shadow: 0px 0px 15px var(--primary-color);
   transition: 0.5s;
+  cursor: pointer;
 }
 
 #azure {
