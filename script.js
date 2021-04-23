@@ -7,6 +7,7 @@ const navigation = document.querySelector('.navigation');
 const logo = document.querySelector('.logo');
 const intro = document.querySelector('.intro');
 const greeting = document.querySelector('.greeting');
+const photo = document.querySelector("img[src='./imgs/portfolio-img.jpg'");
 
 //Set Dark theme
 themeToggle.addEventListener('click', () => {
@@ -85,3 +86,10 @@ function shadow(e) {
   greeting.style.textShadow = `${xDistance}px ${yDistance}px 25px #fff`;
 }
 intro.addEventListener('mousemove', shadow);
+
+//Image flip toggle
+photo.addEventListener('click', () => {
+  '.' + photo.src.slice(21) === './imgs/portfolio-img.jpg'
+    ? (photo.src = './imgs/together-img.jpg')
+    : (photo.src = './imgs/portfolio-img.jpg');
+});
