@@ -4,10 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.min.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <link rel="stylesheet" href="style.css" />
     <style></style>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
@@ -24,9 +26,9 @@
           <ul class="links">
             <li><a id='home'>Home</a></li>
             <li><a href="#about-section" id='about'>About</a></li>
-            <li><a href="#skills-section"id='skills'>Skills</a></li>
-            <li><a href="#"id='projects'>Projects</a></li>
-            <li><a href="#"id='contact'>Contact</a></li>
+            <li><a href="#skills-section" id='skills'>Skills</a></li>
+            <li><a href="#projects-section" id='projects'>Projects</a></li>
+            <li><a href="#contact-section" id='contact'>Contact</a></li>
             <div href="">
               <i id="theme-toggle" class="fas fa-adjust"></i>
             </div>
@@ -53,26 +55,70 @@
       <section id='about-section' class="about">
         <div class="about-container">
           <h1>About</h1>
-        <img src="./imgs/portfolio-img.jpg" alt="profile picture">
+        <img id='profile-pic' src="./imgs/portfolio-img.jpg" alt="profile picture">
         <p>Greetings! My name is Vadym Hulchenko.<br>Transportation Logistics professional in the past, who plunged into the universe of coding in mid 2020 to expand my passion for creativity and technology. Despite of my lifetime attachment to computers, I did not realize how much I would love coding! My formal background has given me the strong skill of problem solving, increasing my performance in the diverse world of technology. I maintain strong fluency in <span id='language'>Russian</span> and <span id='language'>Ukrainian</span>, in addition to <span id='language'>English</span>, opening the potential for new opportunities. Coding is an art form which interferes with everyone’s daily life in one way or another, and I am thrilled to take part in the creative process.<br> In my spare time, you can find me exploring new ideas on my computer, gaming, or in the Rocky Mountains with my fiancée, Bailey, and our dog, Tony.</p>
         </div>
       </section>
       <!------------ Skills Section ------------->
-      <section id='skills-section' class="skills">
+
+      <section id='skills-section'>
+        <div class="skills">
         <h1>Tools & Skills</h1>
         <div class="skills-container">
-          <div class="front-end">test</div>
-          <div class="back-end">test</div>
-          <div class="miscellaneous">test</div>
+          <div class="front-end">
+            <h3>Front-End</h3>
+            <div class="front-end-card">
+            <div><img src="https://www.svgrepo.com/show/314189/html5.svg" alt="html5"><h5>HTML</h5></div>
+            <div><img src="https://www.svgrepo.com/show/305812/bootstrap.svg" alt="bootstrap"><h5>Bootstrap</h5></div>
+            <div><img src="https://www.svgrepo.com/show/305918/css3.svg" alt="css3"><h5>CSS</h5></div>
+            <div><img src="https://www.svgrepo.com/show/314574/sass.svg" alt="sass"><h5>Sass</h5></div>
+            <div><img src="https://www.svgrepo.com/show/314273/less.svg" alt="less"><h5>Less</h5></div>
+            <div><img src="https://www.svgrepo.com/show/306259/javascript.svg" alt="javascript"><h5>JavaScript</h5></div>
+            <div><img src="https://www.svgrepo.com/show/306891/typescript.svg" alt="typescript"><h5>TypeScript</h5></div>
+            <div><img src="https://www.svgrepo.com/show/305924/d3-dot-js.svg" alt="d3js"><h5>D3.js</h5></div>
+            <div><img src="https://www.svgrepo.com/show/314526/react.svg" alt="react"><h5>React</h5></div>
+            <div><img src="https://www.svgrepo.com/show/306657/redux.svg" alt="redux"><h5>Redux</h5></div>
+            <div><img src="https://www.svgrepo.com/show/306944/vue-dot-js.svg" alt="vue_js"><h5>Vue.js</h5></div>
+            <div><img src="https://www.svgrepo.com/show/313478/angular.svg" alt="angular"><h5>Angular</h5></div>
+          </div>
+          </div>
+          <div class="back-end">
+            <h3>Back-End</h3>
+            <div class="back-end-card">
+            <div><img src="https://www.svgrepo.com/show/314393/node-js.svg" alt="node_js"><h5>Node.js</h5></div>
+            <div><img src="https://www.vectorlogo.zone/logos/expressjs/expressjs-ar21.svg" alt="express_js"><h5>Express</h5></div>
+            <div><img src="https://www.svgrepo.com/show/306440/mongodb.svg" alt="mongodb"><h5>MongoDB</h5></div>
+            <div><img src="https://www.svgrepo.com/show/306453/mysql.svg" alt="mysql"><h5>MySQL</h5></div>
+            <div><img src="https://www.svgrepo.com/show/313522/aws.svg" alt="aws"><h5>AWS</h5></div>
+            <div><img src="https://www.svgrepo.com/show/303372/azure-1-logo.svg" id='azure' alt="azure"><h5>Azure</h5></div>
+          </div>
+          </div>
+          <div class="miscellaneous">
+            <h3>Miscellaneous</h3>
+            <div class="miscellaneous-card">
+            <div><img src="https://www.svgrepo.com/show/306344/linux.svg" alt="linux"><h5>Linux</h5></div>
+            <div><img src="https://www.svgrepo.com/show/314031/git.svg" alt="git"><h5>Git</h5></div>
+            <div><img src="https://www.svgrepo.com/show/305241/github.svg" alt="github"><h5>GitHub</h5></div>
+            <div><img src="https://www.svgrepo.com/show/305772/babel.svg" alt="babel"><h5>Babel</h5></div>
+            <div><img src="https://www.svgrepo.com/show/306960/webpack.svg" alt='webpack'><h5>Webpack</h5></div>
+            <div><img src="https://www.svgrepo.com/show/306986/wordpress.svg" alt="wordpress"><h5>WordPress</h5></div>
+            <div><img src="https://www.svgrepo.com/show/306186/heroku.svg" alt='heroku'><h5>Heroku</h5></div>
+            <div><img src="https://www.svgrepo.com/show/306047/firebase.svg" alt="firebase"><h5>Firebase</h5></div>
+            <div><img src="https://www.svgrepo.com/show/306463/netlify.svg" alt="netlify"><h5>Netlify</h5></div>
+            <div><img src="https://www.svgrepo.com/show/305664/adobe-xd.svg" alt="adobe_xd"><h5>Adobe XD</h5></div>
+            <div><img src="https://www.svgrepo.com/show/306935/visualstudiocode.svg" alt="vs_code"><h5>VS Code</h5></div>
+          </div>
+          </div>
         </div>
+      </div>
         </div>
       </section>
       <!------------ Projects Section ------------->
-      <section class="projects">
+      <section id='projects-section' class="projects">
         <h1>Projects!</h1>
       </section>
       <!------------ Contact Section ------------->
-      <section class="contact">
+      <section id='contact-section' class="contact">
         <h1>Contact!</h1>
         <ul>
           <li>

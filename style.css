@@ -173,8 +173,8 @@ a {
 
 .box div {
   position: absolute;
-  width: 22px;
-  height: 22px;
+  width: 62px;
+  height: 62px;
   border: 1px solid var(--primary-color);
   border-radius: 50%;
   background-color: var(--primary-color);
@@ -260,9 +260,9 @@ a {
   align-items: center;
   justify-content: center;
   width: 100%;
-  box-shadow: -2px -2px 20px var(--secondary-color);
   padding-top: 10vh;
   padding-bottom: 13vh;
+  box-shadow: 2px 2px 20px var(--primary-color);
 }
 
 .about-container {
@@ -317,7 +317,7 @@ a {
   text-align: justify;
 }
 
-img {
+#profile-pic {
   margin-top: 3vh;
   width: 30vh;
   border-radius: 50%;
@@ -334,26 +334,74 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   width: 100%;
+  margin-top: 7rem;
+  margin-bottom: 4rem;
 }
 
 .skills-container {
+  margin-top: 2rem;
+  display: flex;
+  width: 80%;
+  flex-wrap: wrap;
+  gap: 12rem;
+  justify-content: center;
+  text-align: center;
+}
+
+h3 {
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  text-shadow: 0px 0px 3px var(--primary-color);
+}
+
+.front-end-card {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 100%;
-  height: 100vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  width: 25rem;
+  padding: 50px;
+  gap: 10px;
+  box-shadow: 0px 0px 15px var(--primary-color);
+  border-radius: 5px;
+}
+
+.back-end-card {
+  display: grid;
+  padding: 60px;
+  gap: 11px;
+  box-shadow: 0px 0px 15px var(--primary-color);
+  border-radius: 5px;
+}
+
+.miscellaneous-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  width: 25rem;
+  padding: 50px;
+  gap: 10px;
+  box-shadow: 0px 0px 15px var(--primary-color);
+  border-radius: 5px;
+}
+
+.skills-container div img {
+  border: 1px solid var(--primary-color);
+  background-color: #fff;
+  border-radius: 50px;
+  width: 4rem;
+  padding: 5px;
 }
 
 .skills h1 {
   display: flex;
-  align-self: center;
+  align-self: flex-start;
   justify-content: center;
   text-shadow: 0px 0px 2px var(--primary-color);
-  width: 240px;
+  width: 300px;
+  margin-left: 2rem;
 }
 
-.skills h1:before,
 .skills h1:after {
   align-self: center;
   content: '';
@@ -366,6 +414,21 @@ img {
 .skills h1:after {
   margin: 0 0 0 10px;
   box-shadow: 0px 0px 2px var(--primary-color);
+}
+
+img {
+  width: 45px;
+  transition: 1s;
+}
+
+img:hover {
+  transform: scale(1.5);
+  box-shadow: 0px 0px 15px var(--primary-color);
+  transition: 0.5s;
+}
+
+#azure {
+  filter: grayscale(100%);
 }
 
 /* MEDIA QUERIES */
