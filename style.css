@@ -9,6 +9,7 @@ section {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  user-select: none;
 }
 
 html {
@@ -309,8 +310,7 @@ a {
 }
 
 .about p {
-  margin-top: 4vh;
-  padding: 0 30px;
+  padding: 40px 30px;
   width: 30rem;
   line-height: 25px;
   font-weight: 1000;
@@ -322,6 +322,7 @@ a {
   width: 30vh;
   border-radius: 50%;
   box-shadow: 1px 1px 15px var(--primary-color);
+  pointer-events: none;
 }
 
 #language {
