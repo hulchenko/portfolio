@@ -168,7 +168,7 @@ a {
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-size: 5rem;
+  font-size: 3rem;
   font-family: 'Fredoka One', cursive;
 }
 
@@ -179,6 +179,14 @@ a {
   border: 1px solid var(--primary-color);
   border-radius: 50%;
   background-color: var(--primary-color);
+}
+.greeting {
+  display: flex;
+  flex-direction: column;
+}
+.greeting h3 {
+  margin-top: -10rem;
+  font-size: 140px;
 }
 
 .box div:nth-child(1) {
@@ -328,12 +336,8 @@ a {
 
 #profile-pic:hover {
   cursor: pointer;
-  transform: scale(1.2);
+  transform: scale(1.2) rotate(360deg);
   transition: 1s;
-}
-
-#profile-pic:active {
-  transform: scale(0);
 }
 
 #language {

@@ -57,11 +57,11 @@ document.querySelector('#home').addEventListener('click', () => {
 
 const typed = new Typed(greeting, {
   strings: [
-    'Hello!^2000<br>My name is Vadym^1000<br>and I love coding!',
-    'Hello!<br>Welcome to My Portfolio!',
+    '<h3>Hello!</h3>^1500<br>I ^1500..I^500 forgot..<br>^500what I was going.<br>^1000Oh, right!<br>',
+    '<h3>Hello!</h3><br>Welcome to My Portfolio!',
   ],
-  typeSpeed: 90,
-  backSpeed: 90,
+  typeSpeed: 70,
+  backSpeed: 30,
   smartBackspace: true,
   showCursor: false,
 });
@@ -83,7 +83,7 @@ function shadow(e) {
 
   const xDistance = Math.round((x / width) * distance - distance / 2);
   const yDistance = Math.round((y / height) * distance - distance / 2);
-  greeting.style.textShadow = `${xDistance}px ${yDistance}px 25px #fff`;
+  greeting.style.textShadow = `${xDistance}px ${yDistance}px 5px #fff`;
 }
 intro.addEventListener('mousemove', shadow);
 
