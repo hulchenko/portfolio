@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Rubik&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 
-section {
-  border: 1px solid var(--primary-color);
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -279,7 +275,7 @@ a {
   flex-direction: column;
   border: none;
   border-radius: 5px;
-  width: 40rem;
+  width: 30rem;
   align-items: center;
   justify-content: center;
   padding: 22px 0px;
@@ -345,6 +341,9 @@ a {
 }
 
 /* TOOLS AND SKILLS */
+#skills-section {
+  border: 1px solid var(--secondary-color);
+}
 
 .skills {
   display: flex;
@@ -362,6 +361,50 @@ a {
   grid-gap: 12rem;
   justify-content: center;
   text-align: center;
+}
+
+.skills-container div img {
+  border: 1px solid var(--primary-color);
+  background-color: #fff;
+  border-radius: 50px;
+  width: 4rem;
+  padding: 5px;
+}
+
+.skills h1 {
+  display: flex;
+  align-self: flex-start;
+  justify-content: center;
+  text-shadow: 0px 0px 2px var(--primary-color);
+  width: 300px;
+  margin-left: 5rem;
+}
+
+.skills h1:after {
+  align-self: center;
+  content: '';
+  border-top: 2px solid;
+  margin: 0 10px 0 0;
+  flex: 1 0 30px;
+  box-shadow: 0px 0px 2px var(--primary-color);
+}
+
+.skills h1:after {
+  margin: 0 0 0 10px;
+  box-shadow: 0px 0px 2px var(--primary-color);
+}
+
+#skills-section img {
+  height: 65px;
+  transition: 1s;
+  filter: grayscale(100%);
+}
+
+#skills-section img:hover {
+  transform: scale(1.7) rotate(5deg) translate(0px, -10px);
+  filter: grayscale(0%);
+  box-shadow: 0px 0px 15px var(--primary-color);
+  transition: 1s;
 }
 
 h3 {
@@ -423,15 +466,114 @@ h3 {
   color: var(--primary-color);
 }
 
-.skills-container div img {
-  border: 1px solid var(--primary-color);
-  background-color: #fff;
-  border-radius: 50px;
-  width: 4rem;
-  padding: 5px;
+/* PROJECTS */
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding-top: 10vh;
+  padding-bottom: 12rem;
+  box-shadow: 2px 2px 20px var(--primary-color);
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
-.skills h1 {
+.split {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  justify-content: center;
+  margin-top: 2rem;
+  grid-gap: 5rem;
+}
+
+.carousel-buttons {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  position: relative;
+  max-width: 100%;
+}
+
+.carousel-container {
+  display: flex;
+  margin-left: 1rem;
+  margin-right: 2rem;
+  margin-top: 2rem;
+  max-width: 750px;
+  border: 15px solid #fff;
+  border-radius: 5px;
+  box-shadow: 2px 2px 20px var(--primary-color);
+  overflow: hidden;
+  transform: rotate(-3deg);
+}
+
+.carousel img {
+  text-align: center;
+}
+
+.projects-github {
+  margin-top: 50px;
+  width: 200px;
+}
+
+.projects-github p {
+  font-size: 15px;
+  text-shadow: 1px 1px 3px var(--primary-color);
+  transform: rotate(15deg);
+}
+
+.projects-github i {
+  margin: 80px;
+  transform: scale(8) rotate(5deg);
+  text-shadow: 1px 1px 20px var(--primary-color);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.projects-github i:hover {
+  transform: scale(11);
+  text-shadow: 1px 1px 3px var(--primary-color);
+  transition: 0.5s;
+}
+
+.carousel {
+  display: flex;
+  height: 500px;
+}
+
+#prevBtn {
+  position: absolute;
+  top: 55%;
+  left: -5%;
+  z-index: 19;
+  font-size: 50px;
+  color: var(--primary-color);
+  cursor: pointer;
+  transform: rotate(-3deg);
+}
+
+#nextBtn {
+  position: absolute;
+  right: -3%;
+  top: 44%;
+  z-index: 19;
+  font-size: 50px;
+  color: var(--primary-color);
+  cursor: pointer;
+  transform: rotate(-3deg);
+}
+
+#prevBtn:hover,
+#nextBtn:hover {
+  text-shadow: 0px 0px 5px var(--primary-color);
+}
+
+.projects h1 {
+  margin-top: 2rem;
   display: flex;
   align-self: flex-start;
   justify-content: center;
@@ -440,7 +582,7 @@ h3 {
   margin-left: 5rem;
 }
 
-.skills h1:after {
+.projects h1:after {
   align-self: center;
   content: '';
   border-top: 2px solid;
@@ -449,22 +591,9 @@ h3 {
   box-shadow: 0px 0px 2px var(--primary-color);
 }
 
-.skills h1:after {
+.projects h1:after {
   margin: 0 0 0 10px;
   box-shadow: 0px 0px 2px var(--primary-color);
-}
-
-#skills-section img {
-  height: 65px;
-  transition: 1s;
-  filter: grayscale(100%);
-}
-
-#skills-section img:hover {
-  transform: scale(1.7) rotate(5deg) translate(0px, -10px);
-  filter: grayscale(0%);
-  box-shadow: 0px 0px 15px var(--primary-color);
-  transition: 1s;
 }
 
 /* MEDIA QUERIES */
@@ -486,6 +615,13 @@ h3 {
   .links {
     display: grid;
     margin-right: 3rem;
+  }
+  #prevBtn {
+    left: 0px;
+  }
+
+  #nextBtn {
+    right: 0px;
   }
 }
 

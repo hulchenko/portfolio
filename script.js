@@ -1,13 +1,19 @@
 const themeToggle = document.querySelector('#theme-toggle');
 const container = document.querySelector('.container');
+//nav
 const toggle = document.querySelector('.toggle');
-const buttonUp = document.querySelector('.button-up');
 const navDisable = document.querySelector('.fa-times');
 const navigation = document.querySelector('.navigation');
-const logo = document.querySelector('.logo');
+//intro
 const intro = document.querySelector('.intro');
 const greeting = document.querySelector('.greeting');
-const photo = document.querySelector("img[src='./imgs/portfolio-img.jpg'");
+//about
+const profilePic = document.querySelector("img[src='./imgs/portfolio-img.jpg'");
+//carousel vars
+const carousel = document.querySelector('.carousel');
+const carouselImages = document.querySelectorAll('.carousel img');
+const prevBtn = document.querySelector('#prevBtn');
+const nextBtn = document.querySelector('#nextBtn');
 
 //Set Dark theme
 themeToggle.addEventListener('click', () => {
@@ -15,20 +21,20 @@ themeToggle.addEventListener('click', () => {
 });
 
 //Navigation Bar Toggle
-toggle.addEventListener('click', (event) => {
+toggle.addEventListener('click', () => {
   navigation.classList.remove('close');
 });
 
-navDisable.addEventListener('click', (event) => {
+navDisable.addEventListener('click', () => {
   navigation.classList.add('close');
 });
 
 //Back to Top
-buttonUp.addEventListener('click', () => {
+document.querySelector('.button-up').addEventListener('click', () => {
   window.scrollTo(0, 0);
 });
 
-logo.addEventListener('click', () => {
+document.querySelector('.logo').addEventListener('click', () => {
   window.scrollTo(0, 0);
 });
 
@@ -88,8 +94,57 @@ function shadow(e) {
 intro.addEventListener('mousemove', shadow);
 
 //Image flip toggle
-photo.addEventListener('click', () => {
-  '.' + photo.src.slice(21) === './imgs/portfolio-img.jpg'
-    ? (photo.src = './imgs/together-img.jpg')
-    : (photo.src = './imgs/portfolio-img.jpg');
+profilePic.addEventListener('click', () => {
+  '.' + profilePic.src.slice(21) === './imgs/portfolio-img.jpg'
+    ? (profilePic.src = './imgs/together-img.jpg')
+    : (profilePic.src = './imgs/portfolio-img.jpg');
+});
+
+//carousel
+let counter = 1;
+carousel.style.transform = 'translateX(' + -750 * counter + 'px)'; //default position
+
+nextBtn.addEventListener('click', () => {
+  if (counter >= carouselImages.length - 1) return;
+  carousel.style.transition = 'transform 1s ease-in-out';
+  counter++;
+  carousel.style.transform = 'translateX(' + -750 * counter + 'px)';
+});
+
+prevBtn.addEventListener('click', () => {
+  if (counter <= 0) return;
+  carousel.style.transition = 'transform 1s ease-in-out';
+  counter--;
+  carousel.style.transform = 'translateX(' + -750 * counter + 'px)';
+});
+
+carousel.addEventListener('transitionend', () => {
+  if (carouselImages[counter].id === 'lastClone') {
+    carousel.style.transition = 'none';
+    counter = carouselImages.length - 2;
+    carousel.style.transform = 'translateX(' + -750 * counter + 'px)';
+  }
+  if (carouselImages[counter].id === 'firstClone') {
+    carousel.style.transition = 'none';
+    counter = carouselImages.length - counter;
+    carousel.style.transform = 'translateX(' + -750 * counter + 'px)';
+  }
+});
+
+nextBtn.addEventListener('click', () => {
+  nextBtn.style.transform = 'rotate(360deg)';
+  nextBtn.style.transition = 'transform 1s ease-out';
+  nextBtn.addEventListener('transitionend', () => {
+    nextBtn.style.transform = null;
+    nextBtn.style.transition = null;
+  });
+});
+
+prevBtn.addEventListener('click', () => {
+  prevBtn.style.transform = 'rotate(-360deg)';
+  prevBtn.style.transition = 'transform 1s ease-out';
+  prevBtn.addEventListener('transitionend', () => {
+    prevBtn.style.transform = null;
+    prevBtn.style.transition = null;
+  });
 });
