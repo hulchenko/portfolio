@@ -10,7 +10,6 @@
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
   font-family: var(--font-family);
 }
 
@@ -890,6 +889,22 @@ hr {
 }
 
 @media screen and (max-width: 600px) {
+  * {
+    max-width: 100%;
+  }
+
+  .intro h1 {
+    font-size: 50px;
+    word-wrap: break-word;
+  }
+
+  .about-container {
+    width: 100%;
+  }
+
+  .about p {
+    width: 100%;
+  }
   .links {
     display: grid;
     margin-right: 4rem;
@@ -903,14 +918,27 @@ hr {
     margin: 2rem;
   }
 
-  .skills {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
+  .skills-container {
+    justify-content: space-around;
   }
 
   .front-end-card {
+    max-width: 100%;
+    margin-top: 10px;
     margin: 0px;
+  }
+
+  .back-end h3 {
+    margin-top: 30px;
+  }
+  .miscellaneous {
+    max-width: 100%;
+  }
+
+  .miscellaneous-card {
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    max-width: 100%;
   }
 }
