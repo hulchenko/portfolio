@@ -7,6 +7,7 @@ const navigation = document.querySelector('.navigation');
 //intro
 const intro = document.querySelector('.intro');
 const greeting = document.querySelector('.greeting');
+
 //about
 const profilePic = document.querySelector("img[src='./imgs/portfolio-img.jpg'");
 //carousel vars
@@ -63,13 +64,27 @@ document.querySelector('#home').addEventListener('click', () => {
 
 const typed = new Typed(greeting, {
   strings: [
-    '<h3>Hello!</h3>^1500<br>I ^1500..I^500 forgot..<br>^500what I was going.<br>^1000Oh, right!<br>',
-    '<h3>Hello!</h3><br>Welcome to My Portfolio!',
+    'Hello!^1000',
+    'Welcome!',
+    'Bienvenue!',
+    'Добро Пожаловать!',
+    'Willkommen!',
+    '¡Bienvenido!',
+    'Välkommen!',
+    'Witaj!',
+    'أهلا بك ',
+    '欢迎 ',
+    'ברוך הבא ',
+    'स्वागत हे',
+    'ようこそ',
+    '환영',
+    'Maligayang Pagdating',
   ],
   typeSpeed: 70,
   backSpeed: 30,
   smartBackspace: true,
   showCursor: false,
+  loop: true,
 });
 
 //Dynamic Shadow
@@ -89,7 +104,7 @@ function shadow(e) {
 
   const xDistance = Math.round((x / width) * distance - distance / 2);
   const yDistance = Math.round((y / height) * distance - distance / 2);
-  greeting.style.textShadow = `${xDistance}px ${yDistance}px 5px #fff`;
+  greeting.style.textShadow = `${xDistance}px ${yDistance}px 5px #111`;
 }
 intro.addEventListener('mousemove', shadow);
 
