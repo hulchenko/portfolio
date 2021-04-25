@@ -880,11 +880,11 @@ hr {
   }
 
   .left {
-    width: 100%;
+    max-width: 100%;
   }
 
   .right {
-    width: 100%;
+    max-width: 100%;
   }
 }
 
