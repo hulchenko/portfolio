@@ -93,7 +93,7 @@ html {
 
 .links {
   display: grid;
-  grid-template-columns: 17% 17% 17% 17% 17% 5% 5%;
+  grid-template-columns: 15% 15% 15% 15% 15% 7% 7%;
   align-items: center;
   justify-content: end;
   margin-top: 3vh;
@@ -905,15 +905,6 @@ hr {
 
   .about p {
     width: 100%;
-  }
-  .links {
-    display: grid;
-    grid-template-columns: 15% 15% 15% 15% 18% 7% 7%;
-    margin-right: 4rem;
-  }
-
-  .links li {
-    margin-right: 1rem;
   }
 
   .contact-buttons li {
