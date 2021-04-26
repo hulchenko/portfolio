@@ -115,9 +115,10 @@ intro.addEventListener('mousemove', shadow);
 document.addEventListener('readystatechange', (event) => {
   if (event.target.readyState === 'interactive') {
     profilePic.addEventListener('click', () => {
+      console.log(event);
       '.' + profilePic.src.slice(21) === './imgs/portfolio-img.jpg'
-        ? (profilePic.src = 'portfolio/imgs/together-img.jpg')
-        : (profilePic.src = 'portfolio/imgs/portfolio-img.jpg');
+        ? (profilePic.src = './imgs/together-img.jpg')
+        : (profilePic.src = './imgs/portfolio-img.jpg');
     });
   }
 });
