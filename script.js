@@ -45,23 +45,6 @@ document.querySelector('#home').addEventListener('click', () => {
 
 //Typed Animation
 
-//Alternative Version
-// var i = 0;
-// var txt = 'Hello!I am Vadym. Welcome to My Portfolio!';
-// var speed = 100;
-
-// function typeWriter() {
-//   if (i < txt.length) {
-//     greeting.innerHTML += txt.charAt(i);
-//     i++;
-//     setTimeout(typeWriter, speed);
-//   }
-// }
-
-// window.onload = function () {
-//   typeWriter();
-// };
-
 const typed = new Typed(greeting, {
   strings: [
     'Hello!^1000',
@@ -86,6 +69,24 @@ const typed = new Typed(greeting, {
   showCursor: false,
   loop: true,
 });
+
+//Alternative pure JS Version
+
+// var i = 0;
+// var txt = 'Hello!I am Vadym. Welcome to My Portfolio!';
+// var speed = 100;
+
+// function typeWriter() {
+//   if (i < txt.length) {
+//     greeting.innerHTML += txt.charAt(i);
+//     i++;
+//     setTimeout(typeWriter, speed);
+//   }
+// }
+
+// window.onload = function () {
+//   typeWriter();
+// };
 
 //Dynamic Shadow
 const distance = 15;
@@ -112,9 +113,9 @@ intro.addEventListener('mousemove', shadow);
 document.addEventListener('readystatechange', (event) => {
   if (event.target.readyState === 'interactive') {
     profilePic.addEventListener('click', () => {
-      profilePic.src.slice(21) === '/imgs/portfolio-img.jpg'
-        ? (profilePic.src = '/imgs/together-img.jpg')
-        : (profilePic.src = '/imgs/portfolio-img.jpg');
+      '.' + profilePic.src.slice(21) === './imgs/portfolio-img.jpg'
+        ? (profilePic.src = './imgs/together-img.jpg')
+        : (profilePic.src = './imgs/portfolio-img.jpg');
     });
   }
 });
@@ -149,6 +150,8 @@ carousel.addEventListener('transitionend', () => {
     carousel.style.transform = 'translateX(' + -750 * counter + 'px)';
   }
 });
+
+//button animation, disabled due to compatibility with Safari
 
 // nextBtn.addEventListener('click', () => {
 //   nextBtn.style.transform = 'rotate(360deg)';

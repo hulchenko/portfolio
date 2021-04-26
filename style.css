@@ -327,11 +327,11 @@ a {
   transition: 1s;
 }
 
-#profile-pic:hover {
+/* #profile-pic:hover {
   cursor: pointer;
   transform: scale(1.2) rotate(360deg);
   transition: 1s;
-}
+} */
 
 #language {
   text-shadow: 0px 0px 2px var(--primary-color);
@@ -908,7 +908,7 @@ hr {
   }
   .links {
     display: grid;
-    justify-content: space-evenly;
+    grid-template-columns: 15% 15% 15% 15% 18% 7% 7%;
     margin-right: 4rem;
   }
 
