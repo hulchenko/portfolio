@@ -6,6 +6,7 @@
   padding: 0;
   box-sizing: border-box;
   user-select: none;
+  max-width: 100%;
 }
 
 html {
@@ -358,6 +359,7 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
+  width: 100%;
 }
 
 .skills-container div img {
@@ -490,7 +492,6 @@ h3 {
   color: var(--primary-color);
   background-color: var(--secondary-color);
   position: relative;
-  max-width: 100%;
 }
 
 .carousel-container {
@@ -869,8 +870,8 @@ hr {
 @media screen and (max-width: 900px) {
   .links {
     display: grid;
-    margin-right: 3rem;
   }
+
   #prevBtn {
     left: 0px;
   }
@@ -899,6 +900,10 @@ hr {
     word-wrap: break-word;
   }
 
+  .links {
+    justify-content: space-between;
+  }
+
   .about-container {
     width: 100%;
   }
@@ -907,12 +912,29 @@ hr {
     width: 100%;
   }
 
+  .skills h1 {
+    width: 70%;
+  }
+
+  .projects h1 {
+    width: 70%;
+  }
+
   .contact-buttons li {
     margin: 2rem;
   }
 
   .skills-container {
+    max-width: 100%;
     justify-content: space-around;
+  }
+
+  .skills h1 {
+    margin-left: 1rem;
+  }
+
+  .projects h1 {
+    margin-left: 1rem;
   }
 
   .front-end-card {
@@ -921,9 +943,15 @@ hr {
     margin: 0px;
   }
 
+  .back-end-card {
+    justify-content: center;
+    max-width: 100%;
+  }
+
   .back-end h3 {
     margin-top: 30px;
   }
+
   .miscellaneous {
     max-width: 100%;
   }
@@ -933,5 +961,13 @@ hr {
     align-items: center;
     margin: 0px;
     max-width: 100%;
+  }
+
+  .email a {
+    font-size: 30px;
+  }
+
+  .right h4 {
+    min-width: 95px;
   }
 }

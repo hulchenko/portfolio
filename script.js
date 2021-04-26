@@ -61,7 +61,7 @@ const typed = new Typed(greeting, {
     'स्वागत हे',
     'ようこそ',
     '환영',
-    'Maligayang Pagdating',
+    'Maligayang Pagdating!',
   ],
   typeSpeed: 70,
   backSpeed: 30,
