@@ -908,6 +908,7 @@ hr {
   }
   .links {
     display: grid;
+    justify-content: space-evenly;
     margin-right: 4rem;
   }
 
