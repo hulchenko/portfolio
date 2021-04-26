@@ -116,8 +116,8 @@ document.addEventListener('readystatechange', (event) => {
   if (event.target.readyState === 'interactive') {
     profilePic.addEventListener('click', () => {
       '.' + profilePic.src.slice(21) === './imgs/portfolio-img.jpg'
-        ? (profilePic.src = '/blob/main/imgs/together-img.jpg')
-        : (profilePic.src = '/blob/main/imgs/together-img.jpg');
+        ? (profilePic.src = '/imgs/together-img.jpg')
+        : (profilePic.src = '/imgs/portfolio-img.jpg');
     });
   }
 });
@@ -155,20 +155,20 @@ carousel.addEventListener('transitionend', () => {
 
 //button animation, disabled due to compatibility with Safari
 
-// nextBtn.addEventListener('click', () => {
-//   nextBtn.style.transform = 'rotate(360deg)';
-//   nextBtn.style.transition = 'transform 1s ease-out';
-//   nextBtn.addEventListener('transitionend', () => {
-//     nextBtn.style.transform = null;
-//     nextBtn.style.transition = null;
-//   });
-// });
+nextBtn.addEventListener('click', () => {
+  nextBtn.style.transform = 'rotate(360deg)';
+  nextBtn.style.transition = 'transform 1s ease-out';
+  nextBtn.addEventListener('transitionend', () => {
+    nextBtn.style.transform = null;
+    nextBtn.style.transition = null;
+  });
+});
 
-// prevBtn.addEventListener('click', () => {
-//   prevBtn.style.transform = 'rotate(-360deg)';
-//   prevBtn.style.transition = 'transform 1s ease-out';
-//   prevBtn.addEventListener('transitionend', () => {
-//     prevBtn.style.transform = null;
-//     prevBtn.style.transition = null;
-//   });
-// });
+prevBtn.addEventListener('click', () => {
+  prevBtn.style.transform = 'rotate(-360deg)';
+  prevBtn.style.transition = 'transform 1s ease-out';
+  prevBtn.addEventListener('transitionend', () => {
+    prevBtn.style.transform = null;
+    prevBtn.style.transition = null;
+  });
+});
