@@ -110,10 +110,14 @@ function shadow(e) {
 intro.addEventListener('mousemove', shadow);
 
 //Image flip toggle
-profilePic.addEventListener('click', () => {
-  '.' + profilePic.src.slice(21) === './imgs/portfolio-img.jpg'
-    ? (profilePic.src = './imgs/together-img.jpg')
-    : (profilePic.src = './imgs/portfolio-img.jpg');
+document.addEventListener('readystatechange', (event) => {
+  if (event.target.readyState === 'interactive') {
+    profilePic.addEventListener('click', () => {
+      profilePic.src.slice(21) === '/imgs/portfolio-img.jpg'
+        ? (profilePic.src = '/imgs/together-img.jpg')
+        : (profilePic.src = '/imgs/portfolio-img.jpg');
+    });
+  }
 });
 
 //carousel
