@@ -9,7 +9,9 @@ const intro = document.querySelector('.intro');
 const greeting = document.querySelector('.greeting');
 
 //about
-const profilePic = document.querySelector("img[src='./imgs/portfolio-img.jpg'");
+const profilePic = document.querySelector(
+  "img[src='./imgs/portfolio-img.jpg']"
+);
 //carousel vars
 const carousel = document.querySelector('.carousel');
 const carouselImages = document.querySelectorAll('.carousel img');
