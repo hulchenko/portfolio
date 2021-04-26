@@ -112,14 +112,12 @@ intro.addEventListener('mousemove', shadow);
 document.addEventListener('readystatechange', (event) => {
   if (event.target.readyState === 'interactive') {
     profilePic.addEventListener('click', () => {
-      '.' + profilePic.src.slice(21) === './imgs/portfolio-img.jpg'
-        ? (profilePic.src = './imgs/together-img.jpg')
-        : (profilePic.src = './imgs/portfolio-img.jpg');
+      profilePic.src.slice(21) === '/imgs/portfolio-img.jpg'
+        ? (profilePic.src = '/imgs/together-img.jpg')
+        : (profilePic.src = '/imgs/portfolio-img.jpg');
     });
   }
 });
-
-onload();
 
 //carousel
 let counter = 1;
@@ -152,20 +150,20 @@ carousel.addEventListener('transitionend', () => {
   }
 });
 
-nextBtn.addEventListener('click', () => {
-  nextBtn.style.transform = 'rotate(360deg)';
-  nextBtn.style.transition = 'transform 1s ease-out';
-  nextBtn.addEventListener('transitionend', () => {
-    nextBtn.style.transform = null;
-    nextBtn.style.transition = null;
-  });
-});
+// nextBtn.addEventListener('click', () => {
+//   nextBtn.style.transform = 'rotate(360deg)';
+//   nextBtn.style.transition = 'transform 1s ease-out';
+//   nextBtn.addEventListener('transitionend', () => {
+//     nextBtn.style.transform = null;
+//     nextBtn.style.transition = null;
+//   });
+// });
 
-prevBtn.addEventListener('click', () => {
-  prevBtn.style.transform = 'rotate(-360deg)';
-  prevBtn.style.transition = 'transform 1s ease-out';
-  prevBtn.addEventListener('transitionend', () => {
-    prevBtn.style.transform = null;
-    prevBtn.style.transition = null;
-  });
-});
+// prevBtn.addEventListener('click', () => {
+//   prevBtn.style.transform = 'rotate(-360deg)';
+//   prevBtn.style.transition = 'transform 1s ease-out';
+//   prevBtn.addEventListener('transitionend', () => {
+//     prevBtn.style.transform = null;
+//     prevBtn.style.transition = null;
+//   });
+// });
