@@ -9,9 +9,7 @@ const intro = document.querySelector('.intro');
 const greeting = document.querySelector('.greeting');
 
 //about
-const profilePic = document.querySelector(
-  "img[src='./imgs/portfolio-img.jpg']"
-);
+const profilePic = document.querySelector('#profile-pic');
 //carousel vars
 const carousel = document.querySelector('.carousel');
 const carouselImages = document.querySelectorAll('.carousel img');
@@ -112,13 +110,15 @@ function shadow(e) {
 intro.addEventListener('mousemove', shadow);
 
 //Image flip toggle
+console.log(profilePic.src);
 document.addEventListener('readystatechange', (event) => {
   if (event.target.readyState === 'interactive') {
     profilePic.addEventListener('click', () => {
-      console.log(event);
-      '.' + profilePic.src.slice(21) === './imgs/portfolio-img.jpg'
-        ? (profilePic.src = './imgs/together-img.jpg')
-        : (profilePic.src = './imgs/portfolio-img.jpg');
+      profilePic.src.includes('portfolio')
+        ? (profilePic.src =
+            'https://hulchenko.github.io/portfolio/imgs/together-img.jpg')
+        : (profilePic.src =
+            'https://hulchenko.github.io/portfolio/imgs/portfolio-img.jpg');
     });
   }
 });
