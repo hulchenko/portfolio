@@ -17,8 +17,34 @@ const prevBtn = document.querySelector('#prevBtn');
 const nextBtn = document.querySelector('#nextBtn');
 
 //Set Dark theme
+
+//Dark Theme Local Storage
+let darkMode = localStorage.getItem('darkMode');
+
+//enable
+const themeEnable = () => {
+  container.classList.add('theme');
+  localStorage.setItem('darkMode', 'enabled');
+};
+
+//disable
+const themeDisable = () => {
+  container.classList.remove('theme');
+  localStorage.setItem('darkMode', null);
+};
+
+if (darkMode === 'enabled') {
+  //keep current selected theme on next load
+  themeEnable();
+}
+
 themeToggle.addEventListener('click', () => {
-  container.classList.toggle('theme');
+  darkMode = localStorage.getItem('darkMode'); //update var on every event
+  if (darkMode !== 'enabled') {
+    themeEnable();
+  } else {
+    themeDisable();
+  }
 });
 
 //Navigation Bar Toggle
@@ -112,7 +138,6 @@ intro.addEventListener('mousemove', shadow);
 //Image flip toggle
 
 profilePic.addEventListener('click', () => {
-  console.log(profilePic.src);
   profilePic.src.includes('solo')
     ? (profilePic.src =
         'https://hulchenko.github.io/portfolio/imgs/together-img.jpg')

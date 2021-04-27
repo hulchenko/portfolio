@@ -510,8 +510,6 @@ h3 {
 
 .carousel img {
   display: flex;
-  justify-content: center;
-  align-items: center;
   max-width: 750px;
 }
 
