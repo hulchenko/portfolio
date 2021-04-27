@@ -110,17 +110,14 @@ function shadow(e) {
 intro.addEventListener('mousemove', shadow);
 
 //Image flip toggle
-console.log(profilePic.src);
-document.addEventListener('readystatechange', (event) => {
-  if (event.target.readyState === 'interactive') {
-    profilePic.addEventListener('click', () => {
-      profilePic.src.includes('portfolio')
-        ? (profilePic.src =
-            'https://hulchenko.github.io/portfolio/imgs/together-img.jpg')
-        : (profilePic.src =
-            'https://hulchenko.github.io/portfolio/imgs/portfolio-img.jpg');
-    });
-  }
+
+profilePic.addEventListener('click', () => {
+  console.log(profilePic.src);
+  profilePic.src.includes('portfolio')
+    ? (profilePic.src =
+        'https://hulchenko.github.io/portfolio/imgs/together-img.jpg')
+    : (profilePic.src =
+        'https://hulchenko.github.io/portfolio/imgs/portfolio-img.jpg');
 });
 
 //carousel
