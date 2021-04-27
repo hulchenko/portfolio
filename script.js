@@ -113,11 +113,11 @@ intro.addEventListener('mousemove', shadow);
 
 profilePic.addEventListener('click', () => {
   console.log(profilePic.src);
-  profilePic.src.includes('portfolio')
+  profilePic.src.includes('solo')
     ? (profilePic.src =
         'https://hulchenko.github.io/portfolio/imgs/together-img.jpg')
     : (profilePic.src =
-        'https://hulchenko.github.io/portfolio/imgs/portfolio-img.jpg');
+        'https://hulchenko.github.io/portfolio/imgs/solo-img.jpg');
 });
 
 //carousel
