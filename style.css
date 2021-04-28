@@ -965,7 +965,11 @@ hr {
     font-size: 30px;
   }
 
+  .email h4 {
+    right: 150px;
+  }
+
   .right h4 {
-    min-width: 95px;
+    min-width: 105px;
   }
 }
