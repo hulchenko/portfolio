@@ -524,6 +524,13 @@ h3 {
   left: 16px;
 }
 
+.carousel-card h5 {
+  position: absolute;
+  text-align: left;
+  bottom: 158px;
+  left: 16px;
+}
+
 .carousel-card p {
   position: absolute;
   bottom: 58px;
