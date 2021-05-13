@@ -508,9 +508,38 @@ h3 {
   text-align: center;
 }
 
+/* CARD DESCRIPTION */
+
+.carousel-card {
+  position: relative;
+  min-width: 750px;
+  text-align: center;
+  color: red;
+}
+
+.carousel-card h2 {
+  position: absolute;
+  text-align: left;
+  bottom: 178px;
+  left: 16px;
+}
+
+.carousel-card p {
+  position: absolute;
+  bottom: 58px;
+  left: 26px;
+  width: 50%;
+  text-align: left;
+}
+
+.carousel-card a {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
 .carousel img {
-  display: flex;
-  max-width: 750px;
+  width: 100%;
 }
 
 .projects-github {
