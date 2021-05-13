@@ -315,7 +315,7 @@ a {
   padding: 40px 30px;
   width: 30rem;
   line-height: 25px;
-  font-weight: 1000;
+  font-weight: 900;
   text-align: justify;
 }
 
@@ -511,38 +511,78 @@ h3 {
 /* CARD DESCRIPTION */
 
 .carousel-card {
+  display: flex;
+  flex-wrap: wrap;
   position: relative;
   min-width: 750px;
   text-align: center;
-  color: red;
+  color: var(--secondary-color);
+  text-shadow: 0px 0px 3px var(--primary-color);
 }
 
 .carousel-card h2 {
   position: absolute;
   text-align: left;
-  bottom: 178px;
-  left: 16px;
+  font-size: 2rem;
+  bottom: 20rem;
+  left: 2rem;
 }
 
 .carousel-card h5 {
   position: absolute;
   text-align: left;
-  bottom: 158px;
-  left: 16px;
+  font-size: 1.5rem;
+  bottom: 17rem;
+  left: 2rem;
 }
 
 .carousel-card p {
   position: absolute;
-  bottom: 58px;
-  left: 26px;
+  line-height: 1.4rem;
+  font-size: 1.2rem;
+  font-weight: 900;
+  bottom: 4rem;
+  left: 1rem;
   width: 50%;
   text-align: left;
+  background-color: rgba(51, 51, 51, 0.1);
+  padding: 1.1rem;
+  border-radius: 5px;
+  text-align: justify;
 }
 
-.carousel-card a {
+.carousel-button-one {
+  cursor: pointer;
+  text-decoration: none;
   position: absolute;
-  bottom: 8px;
-  left: 16px;
+  padding: 0.4em 1em;
+  font-size: 1.3em;
+  background-color: var(--secondary-color);
+  opacity: 0.9;
+  border-radius: 5px;
+  justify-content: space-around;
+  left: 1.3rem;
+  bottom: 1.1rem;
+}
+
+.carousel-button-two {
+  cursor: pointer;
+  text-decoration: none;
+  position: absolute;
+  padding: 0.4em 1em;
+  font-size: 1.3em;
+  background-color: var(--secondary-color);
+  opacity: 0.9;
+  border-radius: 5px;
+  justify-content: space-around;
+  left: 8rem;
+  bottom: 1.1rem;
+}
+
+.carousel-button-one:hover,
+.carousel-button-two:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .carousel img {
@@ -589,6 +629,7 @@ h3 {
   color: var(--primary-color);
   cursor: pointer;
   transform: rotate(-3deg);
+  text-shadow: 1px 1px 3px var(--secondary-color);
 }
 
 #nextBtn {
@@ -600,11 +641,7 @@ h3 {
   color: var(--primary-color);
   cursor: pointer;
   transform: rotate(-3deg);
-}
-
-#prevBtn:hover,
-#nextBtn:hover {
-  text-shadow: 0px 0px 5px var(--primary-color);
+  text-shadow: 1px 1px 3px var(--secondary-color);
 }
 
 .projects h1 {
