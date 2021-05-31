@@ -176,7 +176,7 @@ carousel.addEventListener('transitionend', () => {
   }
 });
 
-//button animation, disabled due to compatibility with Safari
+//button animation, disabled due to compatibility with Safari(fixed with onclick="void(0);")
 
 nextBtn.addEventListener('click', () => {
   nextBtn.style.transform = 'rotate(360deg)';
