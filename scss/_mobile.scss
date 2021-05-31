@@ -43,6 +43,8 @@
   }
   .links {
     justify-content: space-around !important;
+    font-size: 80%;
+    max-width: 100%;
   }
   .about-container {
     width: 100%;
@@ -108,5 +110,22 @@
     h4 {
       min-width: 115px;
     }
+  }
+  .carousel-card {
+    h2 {
+      bottom: 25rem;
+    }
+
+    h5 {
+      bottom: 22rem;
+    }
+
+    p {
+      width: 35%;
+    }
+  }
+  .end {
+    margin: auto;
+    width: 80%;
   }
 }
