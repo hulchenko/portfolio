@@ -1,7 +1,7 @@
 /* exec command:
 sass --watch scss/style.scss css/style.css --style compressed */
-@import "https://fonts.googleapis.com/css2?family=Open+Sans&family=Rubik&display=swap";
-@import "https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap";
+@import 'https://fonts.googleapis.com/css2?family=Open+Sans&family=Rubik&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap';
 * {
   margin: 0;
   padding: 0;
@@ -18,7 +18,7 @@ html {
 :root {
   --primary-color: rgb(51, 51, 51);
   --secondary-color: rgb(255, 255, 255);
-  --font-family: "Rubik", sans-serif;
+  --font-family: 'Rubik', sans-serif;
 }
 
 @keyframes animate {
@@ -165,7 +165,7 @@ html {
 }
 .contact h1:before {
   align-self: center;
-  content: "";
+  content: '';
   border-top: 2px solid;
   margin: 0 30px 0 0;
   flex: 1 0 10px;
@@ -173,7 +173,7 @@ html {
 }
 .contact h1:after {
   align-self: center;
-  content: "";
+  content: '';
   border-top: 2px solid;
   margin: 0 30px 0 0;
   flex: 1 0 10px;
@@ -341,8 +341,8 @@ hr {
   transition: 0.5s;
 }
 .button-up:hover {
-  transform: translateY(-20%) scale(1.5);
-  text-shadow: 0px 0px 5px var(--primary-color);
+  transform: translateY(-5%) scale(1.1);
+  text-shadow: 0px 0px 1px var(--primary-color);
   border-radius: 50%;
   transition: 1s;
 }
@@ -354,7 +354,11 @@ hr {
   align-items: center;
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--secondary-color) 0%,
+    var(--primary-color) 100%
+  );
   box-shadow: 0px 0px 5px var(--primary-color);
 }
 .intro h1 {
@@ -364,7 +368,7 @@ hr {
   justify-content: center;
   text-align: center;
   font-size: 5rem;
-  font-family: "Fredoka One", cursive;
+  font-family: 'Fredoka One', cursive;
 }
 
 .greeting {
@@ -391,7 +395,7 @@ hr {
 }
 .about h1:before {
   align-self: center;
-  content: "";
+  content: '';
   border-top: 2px solid;
   margin: 0 10px 0 0;
   flex: 1 0 30px;
@@ -399,7 +403,7 @@ hr {
 }
 .about h1:after {
   align-self: center;
-  content: "";
+  content: '';
   border-top: 2px solid;
   margin: 0 10px 0 0;
   flex: 1 0 30px;
@@ -487,7 +491,7 @@ hr {
 }
 .skills h1:after {
   align-self: center;
-  content: "";
+  content: '';
   border-top: 2px solid;
   margin: 0 10px 0 0;
   flex: 1 0 30px;
@@ -590,7 +594,7 @@ h3 {
 }
 .projects h1:after {
   align-self: center;
-  content: "";
+  content: '';
   border-top: 2px solid;
   margin: 0 10px 0 0;
   flex: 1 0 30px;
