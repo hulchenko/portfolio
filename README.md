@@ -4,19 +4,16 @@ Personal Portfolio Website
 
 🛠️ Built with
 
-- JavaScript
-- SASS/CSS
+- Good ol' Vanilla JavaScript
+- CSS
 - HTML
-- Typed.js
 
 💡 Features
 
-- Dark/Light Mode (using localStorage for future visits)
+- Project Carousel
+- Dark/Light Mode
 - Typing effect with Typed.js
 - Responsive Shadow
 - Animated Background
-- Image Switch on click
-- Image Carousel
-- Various Animations
+- Dynamic Avatar
 - Responsive on mobile
-- Scroll back to top button
