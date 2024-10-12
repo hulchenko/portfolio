@@ -1,46 +1,48 @@
-const themeToggle = document.querySelector('#theme-toggle');
-const container = document.querySelector('.container');
+import { loadSkills } from "./skills.js";
+
+const themeToggle = document.querySelector("#theme-toggle");
+const container = document.querySelector(".container");
 //nav
-const toggle = document.querySelector('.toggle');
-const navDisable = document.querySelector('.fa-times');
-const navigation = document.querySelector('.navigation');
+const toggle = document.querySelector(".toggle");
+const navDisable = document.querySelector(".fa-times");
+const navigation = document.querySelector(".navigation");
 //intro
-const intro = document.querySelector('.intro');
-const greeting = document.querySelector('.greeting');
+const intro = document.querySelector(".intro");
+const greeting = document.querySelector(".greeting");
 
 //about
-const profilePic = document.querySelector('#profile-pic');
+const profilePic = document.querySelector("#profile-pic");
 //carousel vars
-const carousel = document.querySelector('.carousel');
-const carouselImages = document.querySelectorAll('.carousel img');
-const prevBtn = document.querySelector('#prevBtn');
-const nextBtn = document.querySelector('#nextBtn');
+const carousel = document.querySelector(".carousel");
+const carouselImages = document.querySelectorAll(".carousel img");
+const prevBtn = document.querySelector("#prevBtn");
+const nextBtn = document.querySelector("#nextBtn");
 
 //Set Dark theme
 
 //Dark Theme Local Storage
-let darkMode = localStorage.getItem('darkMode');
+let darkMode = localStorage.getItem("darkMode");
 
 //enable
 const themeEnable = () => {
-  container.classList.add('theme');
-  localStorage.setItem('darkMode', 'enabled');
+  container.classList.add("theme");
+  localStorage.setItem("darkMode", "enabled");
 };
 
 //disable
 const themeDisable = () => {
-  container.classList.remove('theme');
-  localStorage.setItem('darkMode', null);
+  container.classList.remove("theme");
+  localStorage.setItem("darkMode", null);
 };
 
-if (darkMode === 'enabled') {
+if (darkMode === "enabled") {
   //keep current selected theme on next load
   themeEnable();
 }
 
-themeToggle.addEventListener('click', () => {
-  darkMode = localStorage.getItem('darkMode'); //update var on every event
-  if (darkMode !== 'enabled') {
+themeToggle.addEventListener("click", () => {
+  darkMode = localStorage.getItem("darkMode"); //update var on every event
+  if (darkMode !== "enabled") {
     themeEnable();
   } else {
     themeDisable();
@@ -48,24 +50,24 @@ themeToggle.addEventListener('click', () => {
 });
 
 //Navigation Bar Toggle
-toggle.addEventListener('click', () => {
-  navigation.classList.remove('close');
+toggle.addEventListener("click", () => {
+  navigation.classList.remove("close");
 });
 
-navDisable.addEventListener('click', () => {
-  navigation.classList.add('close');
+navDisable.addEventListener("click", () => {
+  navigation.classList.add("close");
 });
 
 //Back to Top
-document.querySelector('.button-up').addEventListener('click', () => {
+document.querySelector(".button-up").addEventListener("click", () => {
   window.scrollTo(0, 0);
 });
 
-document.querySelector('.logo').addEventListener('click', () => {
+document.querySelector(".logo").addEventListener("click", () => {
   window.scrollTo(0, 0);
 });
 
-document.querySelector('#home').addEventListener('click', () => {
+document.querySelector("#home").addEventListener("click", () => {
   window.scrollTo(0, 0);
 });
 
@@ -73,21 +75,21 @@ document.querySelector('#home').addEventListener('click', () => {
 
 const typed = new Typed(greeting, {
   strings: [
-    'Hello!^1000',
-    'Welcome!',
-    'Bienvenue!',
-    'Добро Пожаловать!',
-    'Willkommen!',
-    '¡Bienvenido!',
-    'Välkommen!',
-    'Witaj!',
-    'أهلا بك ',
-    '欢迎 ',
-    'ברוך הבא ',
-    'स्वागत हे',
-    'ようこそ',
-    '환영',
-    'Maligayang Pagdating!',
+    "Hello!^1000",
+    "Welcome!",
+    "Bienvenue!",
+    "Добро Пожаловать!",
+    "Willkommen!",
+    "¡Bienvenido!",
+    "Välkommen!",
+    "Witaj!",
+    "أهلا بك ",
+    "欢迎 ",
+    "ברוך הבא ",
+    "स्वागत हे",
+    "ようこそ",
+    "환영",
+    "Maligayang Pagdating!",
   ],
   typeSpeed: 70,
   backSpeed: 30,
@@ -99,7 +101,7 @@ const typed = new Typed(greeting, {
 //Alternative pure JS Version
 
 // var i = 0;
-// var txt = 'Hello!I am Vadym. Welcome to My Portfolio!';
+// var txt = 'Hello! I am Vadym. Welcome to My Portfolio!';
 // var speed = 100;
 
 // function typeWriter() {
@@ -133,65 +135,67 @@ function shadow(e) {
   const yDistance = Math.round((y / height) * distance - distance / 2);
   greeting.style.textShadow = `${xDistance}px ${yDistance}px 5px #111`;
 }
-intro.addEventListener('mousemove', shadow);
+intro.addEventListener("mousemove", shadow);
 
 //Image flip toggle
 
-profilePic.addEventListener('click', () => {
-  profilePic.src.includes('solo')
+profilePic.addEventListener("click", () => {
+  profilePic.src.includes("solo")
     ? (profilePic.src =
-        'https://hulchenko.github.io/portfolio/imgs/together-img.jpg')
+        "https://hulchenko.github.io/portfolio/imgs/together-img.jpg")
     : (profilePic.src =
-        'https://hulchenko.github.io/portfolio/imgs/solo-img.jpg');
+        "https://hulchenko.github.io/portfolio/imgs/solo-img.jpg");
 });
 
 //carousel
 let counter = 1;
-carousel.style.transform = 'translateX(' + -750 * counter + 'px)'; //default position
+carousel.style.transform = "translateX(" + -750 * counter + "px)"; //default position
 
-nextBtn.addEventListener('click', () => {
+nextBtn.addEventListener("click", () => {
   if (counter >= carouselImages.length - 1) return;
-  carousel.style.transition = 'transform 1s ease-in-out';
+  carousel.style.transition = "transform 1s ease-in-out";
   counter++;
-  carousel.style.transform = 'translateX(' + -750 * counter + 'px)';
+  carousel.style.transform = "translateX(" + -750 * counter + "px)";
 });
 
-prevBtn.addEventListener('click', () => {
+prevBtn.addEventListener("click", () => {
   if (counter <= 0) return;
-  carousel.style.transition = 'transform 1s ease-in-out';
+  carousel.style.transition = "transform 1s ease-in-out";
   counter--;
-  carousel.style.transform = 'translateX(' + -750 * counter + 'px)';
+  carousel.style.transform = "translateX(" + -750 * counter + "px)";
 });
 
-carousel.addEventListener('transitionend', () => {
-  if (carouselImages[counter].id === 'lastClone') {
-    carousel.style.transition = 'none';
+carousel.addEventListener("transitionend", () => {
+  if (carouselImages[counter].id === "lastClone") {
+    carousel.style.transition = "none";
     counter = carouselImages.length - 2;
-    carousel.style.transform = 'translateX(' + -750 * counter + 'px)';
+    carousel.style.transform = "translateX(" + -750 * counter + "px)";
   }
-  if (carouselImages[counter].id === 'firstClone') {
-    carousel.style.transition = 'none';
+  if (carouselImages[counter].id === "firstClone") {
+    carousel.style.transition = "none";
     counter = carouselImages.length - counter;
-    carousel.style.transform = 'translateX(' + -750 * counter + 'px)';
+    carousel.style.transform = "translateX(" + -750 * counter + "px)";
   }
 });
 
 //button animation, disabled due to compatibility with Safari(fixed with onclick="void(0);")
 
-nextBtn.addEventListener('click', () => {
-  nextBtn.style.transform = 'rotate(360deg)';
-  nextBtn.style.transition = 'transform 1s ease-out';
-  nextBtn.addEventListener('transitionend', () => {
+nextBtn.addEventListener("click", () => {
+  nextBtn.style.transform = "rotate(360deg)";
+  nextBtn.style.transition = "transform 1s ease-out";
+  nextBtn.addEventListener("transitionend", () => {
     nextBtn.style.transform = null;
     nextBtn.style.transition = null;
   });
 });
 
-prevBtn.addEventListener('click', () => {
-  prevBtn.style.transform = 'rotate(-360deg)';
-  prevBtn.style.transition = 'transform 1s ease-out';
-  prevBtn.addEventListener('transitionend', () => {
+prevBtn.addEventListener("click", () => {
+  prevBtn.style.transform = "rotate(-360deg)";
+  prevBtn.style.transition = "transform 1s ease-out";
+  prevBtn.addEventListener("transitionend", () => {
     prevBtn.style.transform = null;
     prevBtn.style.transition = null;
   });
 });
+
+loadSkills();
