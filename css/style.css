@@ -1,7 +1,7 @@
 /* exec command:
 sass --watch scss/style.scss css/style.css --style compressed */
-@import 'https://fonts.googleapis.com/css2?family=Open+Sans&family=Rubik&display=swap';
-@import 'https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap';
+@import "https://fonts.googleapis.com/css2?family=Open+Sans&family=Rubik&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap";
 * {
   margin: 0;
   padding: 0;
@@ -18,7 +18,7 @@ html {
 :root {
   --primary-color: rgb(51, 51, 51);
   --secondary-color: rgb(255, 255, 255);
-  --font-family: 'Rubik', sans-serif;
+  --font-family: "Rubik", sans-serif;
 }
 
 @keyframes animate {
@@ -165,7 +165,7 @@ html {
 }
 .contact h1:before {
   align-self: center;
-  content: '';
+  content: "";
   border-top: 2px solid;
   margin: 0 30px 0 0;
   flex: 1 0 10px;
@@ -173,7 +173,7 @@ html {
 }
 .contact h1:after {
   align-self: center;
-  content: '';
+  content: "";
   border-top: 2px solid;
   margin: 0 30px 0 0;
   flex: 1 0 10px;
@@ -368,7 +368,7 @@ hr {
   justify-content: center;
   text-align: center;
   font-size: 5rem;
-  font-family: 'Fredoka One', cursive;
+  font-family: "Fredoka One", cursive;
 }
 
 .greeting {
@@ -395,7 +395,7 @@ hr {
 }
 .about h1:before {
   align-self: center;
-  content: '';
+  content: "";
   border-top: 2px solid;
   margin: 0 10px 0 0;
   flex: 1 0 30px;
@@ -403,7 +403,7 @@ hr {
 }
 .about h1:after {
   align-self: center;
-  content: '';
+  content: "";
   border-top: 2px solid;
   margin: 0 10px 0 0;
   flex: 1 0 30px;
@@ -491,7 +491,7 @@ hr {
 }
 .skills h1:after {
   align-self: center;
-  content: '';
+  content: "";
   border-top: 2px solid;
   margin: 0 10px 0 0;
   flex: 1 0 30px;
@@ -522,7 +522,7 @@ h3 {
   text-shadow: 0px 0px 2px var(--primary-color);
 }
 
-.front-end-card {
+#front-end-card {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -534,13 +534,13 @@ h3 {
   transition: 1s;
   color: var(--secondary-color);
 }
-.front-end-card:hover {
+#front-end-card:hover {
   box-shadow: none !important;
   transition: 1s;
   color: var(--primary-color);
 }
 
-.back-end-card {
+#back-end-card {
   display: grid;
   padding: 50px 80px;
   margin: 4rem;
@@ -549,13 +549,13 @@ h3 {
   transition: 1s;
   color: var(--secondary-color);
 }
-.back-end-card:hover {
+#back-end-card:hover {
   box-shadow: none !important;
   transition: 1s;
   color: var(--primary-color);
 }
 
-.miscellaneous-card {
+#misc-card {
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 25rem;
@@ -566,7 +566,7 @@ h3 {
   transition: 1s;
   color: var(--secondary-color);
 }
-.miscellaneous-card:hover {
+#misc-card:hover {
   box-shadow: none !important;
   transition: 1s;
   color: var(--primary-color);
@@ -594,7 +594,7 @@ h3 {
 }
 .projects h1:after {
   align-self: center;
-  content: '';
+  content: "";
   border-top: 2px solid;
   margin: 0 10px 0 0;
   flex: 1 0 30px;
@@ -818,26 +818,26 @@ h3 {
     justify-content: space-around;
   }
 
-  .front-end-card {
+  #front-end-card {
     max-width: 100%;
     margin-top: 10px;
     margin: 0px;
   }
 
-  .back-end-card {
+  #back-end-card {
     justify-content: center;
     max-width: 100%;
   }
 
-  .back-end h3 {
+  #back-end h3 {
     margin-top: 30px;
   }
 
-  .miscellaneous {
+  #misc {
     max-width: 100%;
   }
 
-  .miscellaneous-card {
+  #misc-card {
     justify-content: center;
     align-items: center;
     margin: 0px;
