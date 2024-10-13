@@ -17,7 +17,6 @@ if (isDark) darkEnable();
 
 const themeToggle = () => {
   const isDark = localStorage.getItem("darkMode");
-  console.log(`is dark ?`, isDark);
   if (isDark) {
     darkDisable();
   } else {
