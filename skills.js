@@ -124,6 +124,7 @@ const skills = [
 export const loadSkills = () => {
   skills.forEach((skill) => {
     const { name, src, alt, section } = skill;
+
     const div = document.createElement("div");
 
     const img = document.createElement("img");
@@ -133,8 +134,7 @@ export const loadSkills = () => {
     const h5 = document.createElement("h5");
     h5.innerHTML = name;
 
-    div.appendChild(img);
-    div.appendChild(h5);
+    div.append(img, h5);
 
     document.getElementById(`${section}-card`).appendChild(div);
   });
