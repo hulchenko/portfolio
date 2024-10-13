@@ -6,15 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.min.css"
-    />
-    <link
-      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
-    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <link rel="stylesheet" href="./css/style.css" />
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <title id="title">Vadym Hulchenko Portfolio</title>
   </head>
   <body>
@@ -22,8 +16,8 @@
       <!------------ Nav Section ------------->
       <header>
         <div class="logo"><i class="fas fa-home"></i></div>
-        <div class="toggle"><i class="fas fa-angle-left"></i></div>
-        <div class="navigation close">
+        <div class="nav-show"><i class="fas fa-angle-left"></i></div>
+        <div class="navigation hidden">
           <ul class="links">
             <li><a id="home">Home</a></li>
             <li><a href="#about-section" id="about">About</a></li>
@@ -31,14 +25,17 @@
             <li><a href="#projects-section" id="projects">Projects</a></li>
             <li><a href="#contact-section" id="contact">Contact</a></li>
             <li><i id="theme-toggle" class="fas fa-adjust"></i></li>
-            <li><i class="fas fa-times"></i></li>
+            <li class="nav-hide"><i class="fas fa-times"></i></li>
           </ul>
         </div>
       </header>
-      <!------------ Main Section ------------->
+      <!------------ Intro Section ------------->
       <section class="intro">
-        <h1 class="greeting"></h1>
-        <div class="box"></div>
+        <h1>
+          <span id="typewriter"></span>
+          <span id="insertion">|</span>
+        </h1>
+        <div id="intro-bg"></div>
       </section>
       <!------------ About Section ------------->
       <section id="about-section" class="about">
@@ -50,8 +47,7 @@
             alt="profile picture"
           />
           <p>
-            Hi there!<br />
-            I'm Vadym, an experienced Software Developer with a strong focus on
+            I am an experienced Software Developer with a strong focus on
             building scalable web applications and cloud solutions using AWS and
             modern JS frameworks like React, Angular and NextJS. Proven track
             record of improving operational efficiency through innovative
@@ -63,22 +59,20 @@
         </div>
       </section>
       <!------------ Skills Section ------------->
-      <section id="skills-section">
-        <div class="skills">
-          <h1>Tools & Skills</h1>
-          <div class="skills-container">
-            <div>
-              <h3>Front-End</h3>
-              <div id="front-end-card"></div>
-            </div>
-            <div id="back-end">
-              <h3>Back-End</h3>
-              <div id="back-end-card"></div>
-            </div>
-            <div id="misc">
-              <h3>Miscellaneous</h3>
-              <div id="misc-card"></div>
-            </div>
+      <section id="skills-section" class="skills">
+        <h1>Tools & Skills</h1>
+        <div class="skills-container">
+          <div>
+            <h3>Front-End</h3>
+            <div id="front-end-card"></div>
+          </div>
+          <div id="back-end">
+            <h3>Back-End</h3>
+            <div id="back-end-card"></div>
+          </div>
+          <div id="misc">
+            <h3>Miscellaneous</h3>
+            <div id="misc-card"></div>
           </div>
         </div>
       </section>
@@ -106,60 +100,41 @@
       <section id="contact-section" class="contact">
         <h1>Contact</h1>
         <div class="contact-container">
-          <div class="left">
-            <div class="email">
-              <h4>Email</h4>
-              <a href="mailto:vadymhulchenko@gmail.com"
-                >vadymhulchenko@gmail.com</a
-              >
-            </div>
-            <div class="resume">
-              <h4>Resume</h4>
-              <a
-                href="https://github.com/hulchenko/portfolio/blob/main/docs/Resume-Vadym-Hulchenko.pdf"
-                ><i class="fas fa-file-alt"></i
+          <div class="resume">
+            <h4>Resume</h4>
+            <a
+              href="https://github.com/hulchenko/portfolio/blob/main/docs/Resume-Vadym-Hulchenko.pdf"
+              ><i class="fas fa-file-alt"></i
+            ></a>
+          </div>
+          <ul class="all-contact-buttons">
+            <li>
+              <a href="mailto:vadymhulchenko@gmail.com" target="_blank"
+                ><i class="fas fa-envelope-square"></i
               ></a>
-            </div>
-          </div>
-          <div class="right">
-            <h4>Social Media</h4>
-            <ul class="all-contact-buttons">
-              <li>
-                <a href="https://github.com/hulchenko" target="_blank"
-                  ><i class="fab fa-github-square"></i
-                ></a>
-              </li>
-              <ul class="contact-buttons">
-                <li>
-                  <a href="https://www.facebook.com/itsyoboivad" target="_blank"
-                    ><i class="fab fa-facebook-square"></i
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/in/hulchenko/"
-                    target="_blank"
-                    ><i class="fab fa-linkedin"></i
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.instagram.com/itsyoboivad/"
-                    target="_blank"
-                    ><i class="fab fa-instagram-square"></i
-                  ></a>
-                </li>
-              </ul>
-            </ul>
-          </div>
+            </li>
+            <li>
+              <a href="https://github.com/hulchenko" target="_blank"
+                ><i class="fab fa-github-square"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/hulchenko/" target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/itsyoboivad/" target="_blank"
+                ><i class="fab fa-instagram-square"></i
+              ></a>
+            </li>
+          </ul>
         </div>
       </section>
       <hr />
-      <div class="end">
-        <span>Vadym Hulchenko</span>
-        <div class="button-up"><i class="fas fa-angle-double-up"></i></div>
-        <span>© 2022</span>
-      </div>
+      <footer>
+        <span>2020 - Present </span>
+      </footer>
     </div>
     <script type="module" src="main.js"></script>
   </body>
