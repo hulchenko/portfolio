@@ -365,15 +365,15 @@ footer {
   text-shadow: 0px 0px 2px var(--primary-color);
 }
 
-#skills-section {
+#skills {
   border: 1px solid var(--secondary-color);
 }
-#skills-section img {
+#skills img {
   height: 65px;
   transition: 1s;
   filter: grayscale(100%);
 }
-#skills-section img:hover {
+#skills img:hover {
   transform: scale(1.7) rotate(5deg) translate(0px, -10px);
   filter: grayscale(0%);
   box-shadow: 0px 0px 15px var(--primary-color);
@@ -849,11 +849,6 @@ h3 {
 a {
   color: var(--primary-color);
   text-decoration: none;
-}
-
-#contact {
-  display: flex;
-  align-self: flex-start !important;
 }
 
 #theme-toggle {
