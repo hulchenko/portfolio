@@ -1,10 +1,8 @@
 import { loadSkills } from "./skills.js";
-import { loadProjects, totalProjects } from "./projects.js";
+import { loadProjects } from "./projects.js";
 import { useProfilePicToggle } from "./img-toggle.js";
 import { useTheme } from "./theme.js";
 import { useCarousel } from "./carousel.js";
-
-// console.log(`TOTAL: `, totalProjects); // TODO pass it in as argument maybe, otherwise it's a circular dependency
 
 //nav
 const toggle = document.querySelector(".toggle");
@@ -103,6 +101,6 @@ intro.addEventListener("mousemove", shadow);
 
 loadSkills();
 loadProjects();
-useProfilePicToggle(); // allow profile image toggle
+useProfilePicToggle();
 useTheme();
 useCarousel();
