@@ -18,313 +18,149 @@
     <title id="title">Vadym Hulchenko Portfolio</title>
   </head>
   <body>
-    <div onclick="void(0);">
-      <div class="container">
-        <!------------ Nav Section ------------->
-        <header>
-          <div class="logo"><i class="fas fa-home"></i></div>
-          <div class="toggle"><i class="fas fa-angle-left"></i></div>
-          <div class="navigation close">
-            <ul class="links">
-              <li><a id="home">Home</a></li>
-              <li><a href="#about-section" id="about">About</a></li>
-              <li><a href="#skills-section" id="skills">Skills</a></li>
-              <li><a href="#projects-section" id="projects">Projects</a></li>
-              <li><a href="#contact-section" id="contact">Contact</a></li>
-              <li><i id="theme-toggle" class="fas fa-adjust"></i></li>
-              <li><i class="fas fa-times"></i></li>
-            </ul>
+    <div class="container">
+      <!------------ Nav Section ------------->
+      <header>
+        <div class="logo"><i class="fas fa-home"></i></div>
+        <div class="toggle"><i class="fas fa-angle-left"></i></div>
+        <div class="navigation close">
+          <ul class="links">
+            <li><a id="home">Home</a></li>
+            <li><a href="#about-section" id="about">About</a></li>
+            <li><a href="#skills-section" id="skills">Skills</a></li>
+            <li><a href="#projects-section" id="projects">Projects</a></li>
+            <li><a href="#contact-section" id="contact">Contact</a></li>
+            <li><i id="theme-toggle" class="fas fa-adjust"></i></li>
+            <li><i class="fas fa-times"></i></li>
+          </ul>
+        </div>
+      </header>
+      <!------------ Main Section ------------->
+      <section class="intro">
+        <h1 class="greeting"></h1>
+        <div class="box"></div>
+      </section>
+      <!------------ About Section ------------->
+      <section id="about-section" class="about">
+        <div class="about-container">
+          <h1>About</h1>
+          <img
+            id="profile-pic"
+            src="./imgs/solo-img.jpg"
+            alt="profile picture"
+          />
+          <p>
+            Hi there!<br />
+            I'm Vadym, an experienced Software Developer with a strong focus on
+            building scalable web applications and cloud solutions using AWS and
+            modern JS frameworks like React, Angular and NextJS. Proven track
+            record of improving operational efficiency through innovative
+            software designs and leveraging Agile methodologies to deliver
+            high-quality solutions.<br />
+            In my spare time, I enjoy being silly with my wife Alissa, and our
+            dog, Tony.
+          </p>
+        </div>
+      </section>
+      <!------------ Skills Section ------------->
+      <section id="skills-section">
+        <div class="skills">
+          <h1>Tools & Skills</h1>
+          <div class="skills-container">
+            <div>
+              <h3>Front-End</h3>
+              <div id="front-end-card"></div>
+            </div>
+            <div id="back-end">
+              <h3>Back-End</h3>
+              <div id="back-end-card"></div>
+            </div>
+            <div id="misc">
+              <h3>Miscellaneous</h3>
+              <div id="misc-card"></div>
+            </div>
           </div>
-        </header>
-        <!------------ Main Section ------------->
-        <section class="intro">
-          <h1 class="greeting"></h1>
-          <div class="box"></div>
-        </section>
-        <!------------ About Section ------------->
-        <section id="about-section" class="about">
-          <div class="about-container">
-            <h1>About</h1>
-            <img
-              id="profile-pic"
-              src="./imgs/solo-img.jpg"
-              alt="profile picture"
-            />
+        </div>
+      </section>
+      <!------------ Projects Section ------------->
+      <section id="projects-section" class="projects">
+        <h1>Projects</h1>
+        <div class="split">
+          <div class="carousel-buttons">
+            <i class="fas fa-chevron-circle-left" id="prevBtn"></i>
+            <i class="fas fa-chevron-circle-right" id="nextBtn"></i>
+            <div id="carousel-container"></div>
+          </div>
+          <div class="projects-github">
             <p>
-              Hi!<br />I'm Vadym, an experienced Software Developer with a
-              strong focus on building scalable web applications and cloud
-              solutions using JavaScript, AWS, and modern frameworks like React,
-              Angular and NextJS. Proven track record of improving operational
-              efficiency through innovative software designs and leveraging
-              Agile methodologies to deliver high-quality solutions.<br />
-              In my spare time, I enjoy being silly with my wife Alissa, and our
-              dog, Tony.
+              * To see more of my projects, you can review my GitHub profile
+              below *
             </p>
+            <a href="https://github.com/hulchenko" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
           </div>
-        </section>
-        <!------------ Skills Section ------------->
-        <section id="skills-section">
-          <div class="skills">
-            <h1>Tools & Skills</h1>
-            <div class="skills-container">
-              <div>
-                <h3>Front-End</h3>
-                <div id="front-end-card"></div>
-              </div>
-              <div id="back-end">
-                <h3>Back-End</h3>
-                <div id="back-end-card"></div>
-              </div>
-              <div id="misc">
-                <h3>Miscellaneous</h3>
-                <div id="misc-card"></div>
-              </div>
+        </div>
+      </section>
+      <!------------ Contact Section ------------->
+      <section id="contact-section" class="contact">
+        <h1>Contact</h1>
+        <div class="contact-container">
+          <div class="left">
+            <div class="email">
+              <h4>Email</h4>
+              <a href="mailto:vadymhulchenko@gmail.com"
+                >vadymhulchenko@gmail.com</a
+              >
             </div>
-          </div>
-        </section>
-        <!------------ Projects Section ------------->
-        <section id="projects-section" class="projects">
-          <h1>Projects</h1>
-          <div class="split">
-            <div class="carousel-buttons">
-              <i class="fas fa-chevron-circle-left" id="prevBtn"></i>
-              <i class="fas fa-chevron-circle-right" id="nextBtn"></i>
-              <div class="carousel-container">
-                <div class="carousel">
-                  <div class="carousel-card">
-                    <img src="./imgs/carousel/1.jpg" id="lastClone" alt="" />
-                    <h2>BoomBox App</h2>
-                    <h5>React, SASS</h5>
-                    <p>
-                      Play/pause/skip/skip-back/auto-play functionality. Nav bar
-                      'Library', with responsive on-click functionality to
-                      switch songs. Mobile friendly.
-                    </p>
-                    <a
-                      class="carousel-button-one"
-                      href="https://github.com/hulchenko/react-music-app"
-                      >Code</a
-                    >
-                    <a
-                      class="carousel-button-two"
-                      href="https://kind-aryabhata-44a21e.netlify.app/"
-                      >Live Demo</a
-                    >
-                  </div>
-                  <div class="carousel-card">
-                    <img src="./imgs/carousel/1.jpg" alt="" />
-                    <h2>BoomBox App</h2>
-                    <h5>React, SASS</h5>
-                    <p>
-                      Play/pause/skip/skip-back/auto-play functionality. Nav bar
-                      'Library', with responsive on-click functionality to
-                      switch songs. Mobile friendly.
-                    </p>
-                    <a
-                      class="carousel-button-one"
-                      href="https://github.com/hulchenko/react-music-app"
-                      >Code</a
-                    >
-                    <a
-                      class="carousel-button-two"
-                      href="https://kind-aryabhata-44a21e.netlify.app/"
-                      >Live Demo</a
-                    >
-                  </div>
-                  <div class="carousel-card">
-                    <img src="./imgs/carousel/2.jpg" alt="" />
-                    <h2>Image File Uploader</h2>
-                    <h5>Node.js, FireBase</h5>
-                    <p>
-                      Image Uploading plugin. Upload, view, delete items.
-                      Multiple choice support. Loading bar, description field.
-                      Supports PNG, JPG, JPEG types.
-                    </p>
-                    <a
-                      class="carousel-button-one"
-                      href="https://github.com/hulchenko/file-uploader"
-                      >Code</a
-                    >
-                    <a
-                      class="carousel-button-two"
-                      href="https://vigorous-wright-e2ac02.netlify.app/"
-                      >Live Demo</a
-                    >
-                  </div>
-                  <div class="carousel-card">
-                    <img src="./imgs/carousel/3.jpg" alt="" />
-                    <h2>Covid-19 Tracker</h2>
-                    <h5>Vue, Tailwind</h5>
-                    <p>
-                      Fetching worldwide current Covid-19 data from
-                      https://covid19api.com/. Responsive, with drop down
-                      country choice. Data is updated multiple times a day.
-                    </p>
-                    <a
-                      class="carousel-button-one"
-                      href="https://github.com/hulchenko/vue-covid-19"
-                      >Code</a
-                    >
-                    <a
-                      class="carousel-button-two"
-                      href="https://relaxed-thompson-7bcbce.netlify.app/"
-                      >Live Demo</a
-                    >
-                  </div>
-                  <div class="carousel-card">
-                    <img src="./imgs/carousel/4.jpg" alt="" />
-                    <h2>Etch-A-Sketch</h2>
-                    <h5>JS, CSS, HTML</h5>
-                    <p>
-                      Good old Etch-A-Sketch game, but improved! Supports grid
-                      selection(1-100). Random color support (Rainbow option).
-                      Reset button to start anew.
-                    </p>
-                    <a
-                      class="carousel-button-one"
-                      href="https://github.com/hulchenko/etch-a-sketch-project"
-                      >Code</a
-                    >
-                    <a
-                      class="carousel-button-two"
-                      href="https://hulchenko.github.io/etch-a-sketch-project/"
-                      >Live Demo</a
-                    >
-                  </div>
-                  <div class="carousel-card">
-                    <img src="./imgs/carousel/5.jpg" alt="" />
-                    <h2>Calculator</h2>
-                    <h5>JS, CSS, HTML</h5>
-                    <p>
-                      Default calculator. Backspace button support. Various
-                      tweaks to match the real calculator behavior.
-                    </p>
-                    <a
-                      class="carousel-button-one"
-                      href="https://github.com/hulchenko/calculator-project"
-                      >Code</a
-                    >
-                    <a
-                      class="carousel-button-two"
-                      href="https://hulchenko.github.io/calculator-project/"
-                      >Live Demo</a
-                    >
-                  </div>
-                  <div class="carousel-card">
-                    <img src="./imgs/carousel/6.jpg" alt="" />
-                    <h2>Mortgage Calculator</h2>
-                    <h5>React, CSS, API</h5>
-                    <p>
-                      Loan calculator with various calculating functionalities.
-                      Friendly daily advises fetched from API.
-                    </p>
-                    <a
-                      class="carousel-button-one"
-                      href="https://github.com/hulchenko/mortgage-calculator-produce8"
-                      >Code</a
-                    >
-                    <a
-                      class="carousel-button-two"
-                      href="https://hulchenko.github.io/mortgage-calculator-produce8/"
-                      >Live Demo</a
-                    >
-                  </div>
-                  <div class="carousel-card">
-                    <img src="./imgs/carousel/1.jpg" id="firstClone" alt="" />
-                    <h2>BoomBox App</h2>
-                    <h5>React, SASS</h5>
-                    <p>
-                      Play/pause/skip/skip-back/auto-play functionality. Nav bar
-                      'Library', with responsive on-click functionality to
-                      switch songs. Mobile friendly.
-                    </p>
-                    <a
-                      class="carousel-button-one"
-                      href="https://github.com/hulchenko/react-music-app"
-                      >Code</a
-                    >
-                    <a
-                      class="carousel-button-two"
-                      href="https://kind-aryabhata-44a21e.netlify.app/"
-                      >Live Demo</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="projects-github">
-              <p>
-                * To see more of my projects, you can review my GitHub profile
-                below *
-              </p>
-              <a href="https://github.com/hulchenko" target="_blank"
-                ><i class="fab fa-github"></i
+            <div class="resume">
+              <h4>Resume</h4>
+              <a
+                href="https://github.com/hulchenko/portfolio/blob/main/docs/Resume-Vadym-Hulchenko.pdf"
+                ><i class="fas fa-file-alt"></i
               ></a>
             </div>
           </div>
-        </section>
-        <!------------ Contact Section ------------->
-        <section id="contact-section" class="contact">
-          <h1>Contact</h1>
-          <div class="contact-container">
-            <div class="left">
-              <div class="email">
-                <h4>Email</h4>
-                <a href="mailto:vadymhulchenko@gmail.com"
-                  >vadymhulchenko@gmail.com</a
-                >
-              </div>
-              <div class="resume">
-                <h4>Resume</h4>
-                <a
-                  href="https://github.com/hulchenko/portfolio/blob/main/docs/Resume-Vadym-Hulchenko.pdf"
-                  ><i class="fas fa-file-alt"></i
+          <div class="right">
+            <h4>Social Media</h4>
+            <ul class="all-contact-buttons">
+              <li>
+                <a href="https://github.com/hulchenko" target="_blank"
+                  ><i class="fab fa-github-square"></i
                 ></a>
-              </div>
-            </div>
-            <div class="right">
-              <h4>Social Media</h4>
-              <ul class="all-contact-buttons">
+              </li>
+              <ul class="contact-buttons">
                 <li>
-                  <a href="https://github.com/hulchenko" target="_blank"
-                    ><i class="fab fa-github-square"></i
+                  <a href="https://www.facebook.com/itsyoboivad" target="_blank"
+                    ><i class="fab fa-facebook-square"></i
                   ></a>
                 </li>
-                <ul class="contact-buttons">
-                  <li>
-                    <a
-                      href="https://www.facebook.com/itsyoboivad"
-                      target="_blank"
-                      ><i class="fab fa-facebook-square"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.linkedin.com/in/hulchenko/"
-                      target="_blank"
-                      ><i class="fab fa-linkedin"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.instagram.com/itsyoboivad/"
-                      target="_blank"
-                      ><i class="fab fa-instagram-square"></i
-                    ></a>
-                  </li>
-                </ul>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/hulchenko/"
+                    target="_blank"
+                    ><i class="fab fa-linkedin"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/itsyoboivad/"
+                    target="_blank"
+                    ><i class="fab fa-instagram-square"></i
+                  ></a>
+                </li>
               </ul>
-            </div>
+            </ul>
           </div>
-        </section>
-        <hr />
-        <div class="end">
-          <span>Vadym Hulchenko</span>
-          <div class="button-up"><i class="fas fa-angle-double-up"></i></div>
-          <span>© 2022</span>
         </div>
+      </section>
+      <hr />
+      <div class="end">
+        <span>Vadym Hulchenko</span>
+        <div class="button-up"><i class="fas fa-angle-double-up"></i></div>
+        <span>© 2022</span>
       </div>
     </div>
-    <script type="module" src="script.js"></script>
+    <script type="module" src="main.js"></script>
   </body>
 </html>
