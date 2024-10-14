@@ -1,7 +1,7 @@
 import { loadSkills } from "./components/skills.js";
 import { loadProjects } from "./components/projects.js";
 import { useProfilePicToggle } from "./components/img-toggle.js";
-import { useHeader } from "./components/header-controls.js";
+import { useHeaderControls } from "./components/header-controls.js";
 import { useCarousel } from "./components/carousel.js";
 import { loadIntro } from "./components/intro.js";
 
@@ -12,5 +12,5 @@ loadProjects();
 
 // enable modules
 useProfilePicToggle();
-useHeader();
+useHeaderControls();
 useCarousel();
