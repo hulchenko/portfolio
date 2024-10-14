@@ -199,47 +199,22 @@ footer {
 }
 
 .intro h1 {
-  display: flex;
-  flex-wrap: wrap;
   font-size: 4rem;
   font-family: "Fredoka One", cursive;
 }
 
-.about {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 30vw;
-  height: 14rem;
-}
-
-.about-container {
-  display: flex;
-  flex-direction: column;
-  border: none;
-  border-radius: 5px;
-  width: 30rem;
-  align-items: center;
-  justify-content: center;
-  padding: 22px 0px;
-  box-shadow: 0px 0px 15px var(--primary-color);
-  transition: 0.5s;
-}
-.about-container:hover {
-  transform: translateY(-10px);
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
-  transition: 1.5s;
+.intro-container {
+  width: 25vw;
 }
 
 #bio {
   opacity: 0;
-  transition: 1.5s;
+  transition: 1s;
   line-height: 30px;
-  font-weight: 900;
+  font-size: 1.3rem;
   text-align: justify;
-  width: 90%;
-  margin-top: 2rem;
+  padding-right: 1rem;
+  margin-top: 1rem;
 }
 
 #bio.show {
@@ -254,6 +229,8 @@ footer {
   box-shadow: 1px 1px 15px var(--primary-color);
   transition: 1.5s;
   opacity: 0;
+  float: right;
+  margin: 1rem;
 }
 
 #profile-pic.show {
@@ -371,7 +348,7 @@ footer {
   box-shadow: 0px 0px 2px var(--primary-color);
 }
 
-.carousel-buttons {
+.projects-container {
   color: var(--primary-color);
   background-color: var(--secondary-color);
   position: relative;
@@ -490,11 +467,7 @@ footer {
     word-wrap: break-word;
   }
 
-  .about-container {
-    width: 100%;
-  }
-
-  .about p {
+  .intro-container p {
     width: 100%;
   }
 
