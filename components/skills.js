@@ -12,12 +12,6 @@ const skills = [
     section: "front-end",
   },
   {
-    name: "NextJS",
-    src: "./images/svg/nextjs.svg",
-    alt: "nextjs",
-    section: "front-end",
-  },
-  {
     name: "Angular",
     src: "./images/svg/angular-logo.svg",
     alt: "angular",
@@ -30,21 +24,15 @@ const skills = [
     section: "front-end",
   },
   {
+    name: "NextJS",
+    src: "./images/svg/nextjs.svg",
+    alt: "nextjs",
+    section: "front-end",
+  },
+  {
     name: "Tailwind CSS",
     src: "./images/svg/tailwind.svg",
     alt: "tailwind",
-    section: "front-end",
-  },
-  {
-    name: "Bootstrap",
-    src: "./images/svg/bootstrap-4-logo-svgrepo-com.svg",
-    alt: "bootstrap",
-    section: "front-end",
-  },
-  {
-    name: "Sass",
-    src: "./images/svg/sass.svg",
-    alt: "sass",
     section: "front-end",
   },
   {
@@ -60,27 +48,33 @@ const skills = [
     section: "back-end",
   },
   {
-    name: "Python",
-    src: "./images/svg/python.svg",
-    alt: "python",
-    section: "back-end",
-  },
-  {
     name: "Node.js",
     src: "./images/svg/nodejs-icon-logo-svgrepo-com.svg",
     alt: "node_js",
     section: "back-end",
   },
   {
-    name: "Azure",
-    src: "./images/svg/azure-1.svg",
-    alt: "azure",
+    name: "Python",
+    src: "./images/svg/python.svg",
+    alt: "python",
     section: "back-end",
   },
   {
     name: "MongoDB",
     src: "./images/svg/mongodb.svg",
     alt: "mongodb",
+    section: "back-end",
+  },
+  {
+    name: "Firebase",
+    src: "./images/svg/firebase-2.svg",
+    alt: "firebase",
+    section: "back-end",
+  },
+  {
+    name: "Azure",
+    src: "./images/svg/azure-1.svg",
+    alt: "azure",
     section: "back-end",
   },
   {
@@ -102,12 +96,6 @@ const skills = [
     section: "misc",
   },
   {
-    name: "Firebase",
-    src: "./images/svg/firebase-2.svg",
-    alt: "firebase",
-    section: "back-end",
-  },
-  {
     name: "Linux",
     src: "./images/svg/linux-svgrepo-com.svg",
     alt: "linux",
@@ -126,6 +114,7 @@ export const loadSkills = () => {
     const { name, src, alt, section } = skill;
 
     const div = document.createElement("div");
+    div.className = "skill";
 
     const img = document.createElement("img");
     img.src = src;
@@ -136,6 +125,6 @@ export const loadSkills = () => {
 
     div.append(img, h5);
 
-    document.getElementById(`${section}-card`).appendChild(div);
+    document.getElementById(`${section}-row`).appendChild(div);
   });
 };

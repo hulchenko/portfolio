@@ -14,7 +14,11 @@ const fillBackground = () => {
 
 const type = (tag, text, i = 0) => {
   const length = text.length - 1;
-  if (i > length) return;
+  if (i > length) {
+    bio.classList.add("show");
+    img.classList.add("show");
+    return;
+  }
 
   tag.textContent += text[i];
   setTimeout(() => type(tag, text, i + 1), 120);
@@ -23,10 +27,6 @@ const type = (tag, text, i = 0) => {
 const loadGreeting = () => {
   const typeText = "Hey, I'm Vadym.";
   setTimeout(() => type(typewriter, typeText), 1000);
-  setTimeout(() => {
-    bio.classList.add("show");
-    img.classList.add("show");
-  }, 3000);
 };
 
 export const loadIntro = () => {
