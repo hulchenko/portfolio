@@ -15,7 +15,7 @@ html {
 
 :root {
   --primary-color: rgb(51, 51, 51);
-  --secondary-color: rgb(255, 255, 255);
+  --secondary-color: rgb(242, 242, 242);
   --font-family: "Rubik", sans-serif;
 }
 
@@ -548,73 +548,63 @@ h3 {
   min-width: 750px;
   text-align: center;
   color: var(--secondary-color);
+}
+
+.carousel-card h2,
+.carousel-card h5,
+.carousel-card p {
+  position: absolute;
+  text-align: left;
   text-shadow: -1px -1px 0 var(--primary-color), 1px -1px 0 var(--primary-color),
     -1px 1px 0 var(--primary-color), 1px 1px 0 var(--primary-color);
 }
 
 .carousel-card h2 {
-  position: absolute;
-  text-align: left;
   font-size: 2rem;
-  bottom: 15rem;
-  left: 2rem;
+  bottom: 7rem;
+  left: 1rem;
 }
 
 .carousel-card h5 {
-  position: absolute;
-  text-align: left;
-  font-size: 1.5rem;
-  bottom: 12rem;
-  left: 2rem;
+  font-size: 1rem;
+  bottom: 1.5rem;
+  right: 3rem;
 }
 
 .carousel-card p {
-  position: absolute;
-  line-height: 1.4rem;
-  font-size: 1rem;
   font-weight: 900;
   bottom: 4rem;
   left: 1rem;
-  width: 50%;
-  text-align: left;
-  background-color: rgba(51, 51, 51, 0.3);
-  padding: 1.1rem;
-  border-radius: 5px;
-  text-align: justify;
+  width: 90%;
 }
 
-.carousel-button-one {
+.carousel-card img {
+  filter: blur(1px) brightness(0.7);
+}
+
+.carousel-button {
   cursor: pointer;
-  text-decoration: none;
+  font-weight: 900;
   position: absolute;
   padding: 0.4em 1em;
-  font-size: 1.3em;
+  font-size: 1.1em;
   background-color: var(--secondary-color);
   opacity: 0.9;
   border-radius: 5px;
-  justify-content: space-around;
-  left: 1.3rem;
-  bottom: 1.1rem;
-}
-.carousel-button-one:hover {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
+  border: 1px solid var(--primary-color);
+  bottom: 1rem;
 }
 
-.carousel-button-two {
-  cursor: pointer;
-  text-decoration: none;
-  position: absolute;
-  padding: 0.4em 1em;
-  font-size: 1.3em;
-  background-color: var(--secondary-color);
-  opacity: 0.9;
-  border-radius: 5px;
-  justify-content: space-around;
+.carousel-button.one {
+  left: 1rem;
+}
+
+.carousel-button.two {
   left: 8rem;
-  bottom: 1.1rem;
 }
-.carousel-button-two:hover {
+
+.carousel-button.one:hover,
+.carousel-button.two:hover {
   background-color: var(--primary-color);
   color: var(--secondary-color);
 }
@@ -772,7 +762,7 @@ h3 {
 }
 
 .dark {
-  --primary-color: rgb(255, 255, 255);
+  --primary-color: rgb(242, 242, 242);
   --secondary-color: rgb(51, 51, 51);
   --theme-color: linear-gradient(to right, rgb(67, 67, 67) 0%, #000 100%);
 }

@@ -7,7 +7,7 @@ const projects = [
     title: "Calorie Tracker",
     tools: "TypeScript, NextJS, Tailwind, Neon PostgreSQL, Chakra UI",
     description:
-      "Allows you to track your daily and weekly calorie intake and manage your health goals. Auth control with profile management.",
+      "Allows you to track your daily and weekly calorie intake and manage your health goals. Custom authentication control with profile management.",
     code: "https://github.com/hulchenko/nextjs-calorie-tracker",
     demo: "https://nextjs-calorie-tracker-woad.vercel.app/",
   },
@@ -87,13 +87,13 @@ export const loadProjects = () => {
     p.innerHTML = description;
 
     const codeLink = document.createElement("a");
-    codeLink.className = "carousel-button-one";
+    codeLink.classList = "carousel-button one";
     codeLink.href = code;
     codeLink.innerText = "Code";
     codeLink.target = "_blank";
 
     const demoLink = document.createElement("a");
-    demoLink.className = "carousel-button-two";
+    demoLink.classList = "carousel-button two";
     demoLink.href = demo;
     demoLink.innerText = "Demo";
     demoLink.target = "_blank";
