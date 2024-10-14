@@ -6,26 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
     <link rel="stylesheet" href="./css/style.css" />
     <title id="title">Vadym Hulchenko Portfolio</title>
   </head>
   <body>
-    <div class="container">
+    <div id="main-container">
       <!------------ Nav Section ------------->
       <header>
-        <div class="logo"><i class="fas fa-home"></i></div>
-        <div class="nav-show"><i class="fas fa-angle-left"></i></div>
-        <div class="navigation hidden">
-          <ul class="links">
-            <li><a id="home">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><i id="theme-toggle" class="fas fa-adjust"></i></li>
-            <li class="nav-hide"><i class="fas fa-times"></i></li>
-          </ul>
+        <div id="header-controls">
+          <div id="theme"><i class="fas fa-adjust"></i></div>
+          <div id="up"><i class="fas fa-up-long"></i></div>
         </div>
       </header>
       <!------------ Intro Section ------------->
@@ -54,7 +46,7 @@
         <div id="intro-bg"></div>
       </section>
       <!------------ Skills Section ------------->
-      <section id="skills" class="skills">
+      <section class="skills">
         <h1>Skills & Experience</h1>
         <div class="skills-container">
           <div id="front-end-row"></div>
@@ -63,24 +55,18 @@
         </div>
       </section>
       <!------------ Projects Section ------------->
-      <section id="projects" class="projects">
+      <section class="projects">
         <h1>Personal Projects</h1>
-        <div class="split">
-          <div class="carousel-buttons">
-            <i class="fas fa-chevron-circle-left" id="prevBtn"></i>
-            <i class="fas fa-chevron-circle-right" id="nextBtn"></i>
-            <div id="carousel-container"></div>
-          </div>
-          <div class="projects-github">
-            <p>* You can review my GitHub profile below *</p>
-            <a href="https://github.com/hulchenko" target="_blank"
-              ><i class="fab fa-github"></i
-            ></a>
-          </div>
+        <div class="carousel-buttons">
+          <!-- <i class="fas fa-chevron-circle-left" id="prevBtn"></i> -->
+          <i class="fas fa-left-long" id="prevBtn"></i>
+          <!-- <i class="fas fa-chevron-circle-right" id="nextBtn"></i> -->
+          <i class="fas fa-right-long" id="nextBtn"></i>
+          <div id="carousel-container"></div>
         </div>
       </section>
       <!------------ Contact Section ------------->
-      <section id="contact" class="contact">
+      <section class="contact">
         <h1>Contact</h1>
         <div class="contact-container">
           <div class="resume">

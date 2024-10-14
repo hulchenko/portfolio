@@ -1,5 +1,6 @@
-const toggle = document.querySelector("#theme-toggle");
-const container = document.querySelector(".container");
+const theme = document.getElementById("theme");
+const up = document.getElementById("up");
+const container = document.getElementById("main-container");
 
 const darkEnable = () => {
   container.classList.add("dark");
@@ -24,8 +25,9 @@ const themeToggle = () => {
   }
 };
 
-export const useTheme = () => {
-  toggle.addEventListener("click", () => {
+export const useHeader = () => {
+  theme.addEventListener("click", () => {
     themeToggle();
   });
+  up.addEventListener("click", () => window.scrollTo(0, 0));
 };
