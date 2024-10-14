@@ -1,5 +1,7 @@
 const typewriter = document.getElementById("typewriter");
 const background = document.getElementById("intro-bg");
+const bio = document.getElementById("bio");
+const img = document.getElementById("profile-pic");
 
 const fillBackground = () => {
   let count = 0;
@@ -19,8 +21,12 @@ const type = (tag, text, i = 0) => {
 };
 
 const loadGreeting = () => {
-  const text = "Hey, I'm Vadym.";
-  setTimeout(() => type(typewriter, text), 1000);
+  const typeText = "Hey, I'm Vadym.";
+  setTimeout(() => type(typewriter, typeText), 1000);
+  setTimeout(() => {
+    bio.classList.add("show");
+    img.classList.add("show");
+  }, 3000);
 };
 
 export const loadIntro = () => {
