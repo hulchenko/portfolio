@@ -353,7 +353,7 @@ footer {
   margin-right: 2rem;
   margin-top: 2rem;
   max-width: 750px;
-  border: 15px solid var(--primary-color);
+  border: 15px solid #fff;
   border-radius: 15px;
   box-shadow: 2px 2px 20px var(--primary-color);
   overflow: hidden;
@@ -428,106 +428,6 @@ footer {
   color: var(--secondary-color);
 }
 
-@media screen and (max-width: 1480px) {
-  .links {
-    display: grid;
-    margin-right: 1rem;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  #prevBtn {
-    left: 0.5rem;
-    top: 50%;
-  }
-
-  #nextBtn {
-    right: 0.5rem;
-    top: 50%;
-  }
-
-  .carousel-card img {
-    position: absolute;
-    left: 20%;
-    top: 50%;
-    transform: none;
-    -webkit-transform: translateY(-50%) translateX(-50%);
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .intro-container {
-    width: 100%;
-    padding: 1rem;
-  }
-
-  .intro-container h1 {
-    font-size: 3rem;
-  }
-
-  .skills-container {
-    max-width: 100%;
-    justify-content: space-around;
-    color: var(--primary-color);
-  }
-
-  .skills-container .skill {
-    padding: 0 0.5rem;
-  }
-
-  #front-end-row,
-  #back-end-row,
-  #misc-row {
-    max-width: 100%;
-    margin-top: 10px;
-    margin: 0px;
-  }
-
-  #front-end-row img,
-  #back-end-row img,
-  #misc-row img {
-    width: 5rem;
-    height: 5rem;
-  }
-
-  .projects h1,
-  .contact h1,
-  .skills h1 {
-    width: 100%;
-  }
-
-  .email a {
-    font-size: 30px;
-  }
-  .email h4 {
-    right: 150px;
-  }
-
-  .carousel-card h2 {
-    bottom: 25rem;
-  }
-  .carousel-card h5 {
-    bottom: 9rem;
-    left: 1rem;
-    width: 40%;
-  }
-
-  .carousel-card p {
-    width: 40%;
-  }
-
-  #carousel-container {
-    transform: none;
-    border: 3px solid var(--secondary-color);
-    margin-inline: 3rem;
-  }
-
-  footer {
-    margin: auto;
-    width: 80%;
-  }
-}
-
 #main-container {
   background-color: var(--secondary-color);
   color: var(--primary-color);
@@ -578,6 +478,115 @@ a {
 
 #insertion {
   animation: blink 1s linear infinite;
+}
+
+@media screen and (max-width: 1536px) {
+  /* 2xl */
+  .intro-container {
+    width: 100%;
+    padding: 5rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  /* lg */
+  .intro-container h1 {
+    font-size: 3rem;
+  }
+
+  .skills-container {
+    color: var(--primary-color);
+  }
+
+  #prevBtn {
+    left: 0.5rem;
+    top: 50%;
+  }
+
+  #nextBtn {
+    right: 0.5rem;
+    top: 50%;
+  }
+
+  #carousel-container {
+    transform: none;
+    border: 3px solid #fff;
+    margin-inline: 3rem;
+  }
+
+  .carousel-card h5 {
+    right: 6rem;
+  }
+
+  .carousel-card p {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  /* sm */
+  .intro-container {
+    padding: 1rem;
+  }
+
+  .skills-container {
+    max-width: 100%;
+    justify-content: space-around;
+    color: var(--primary-color);
+  }
+
+  .skills-container .skill {
+    padding: 0 0.5rem;
+  }
+
+  #front-end-row,
+  #back-end-row,
+  #misc-row {
+    max-width: 100%;
+    margin-top: 10px;
+    margin: 0px;
+  }
+
+  #front-end-row img,
+  #back-end-row img,
+  #misc-row img {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .projects h1,
+  .contact h1,
+  .skills h1 {
+    width: 100%;
+  }
+
+  .email a {
+    font-size: 30px;
+  }
+  .email h4 {
+    right: 150px;
+  }
+
+  .carousel-card img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: none;
+    -webkit-transform: translateY(0) translateX(-20%);
+  }
+
+  .carousel-card h2 {
+    bottom: 25rem;
+  }
+  .carousel-card h5 {
+    bottom: 9rem;
+    left: 1rem;
+    width: 40%;
+  }
+
+  .carousel-card p {
+    width: 40%;
+  }
 }
 
 /* CSS functions */
