@@ -24,60 +24,8 @@ html {
   position: absolute;
   width: 2rem;
   height: 2rem;
-  border: 1px solid var(--primary-color);
   border-radius: 50px;
   background-color: var(--primary-color);
-}
-
-#intro-bg div:nth-child(1) {
-  top: 12%;
-  left: 42%;
-  animation: animate 6s linear infinite;
-}
-#intro-bg div:nth-child(2) {
-  top: 70%;
-  left: 50%;
-  animation: animate 7s linear infinite;
-}
-#intro-bg div:nth-child(3) {
-  top: 17%;
-  left: 6%;
-  animation: animate 8s linear infinite;
-}
-#intro-bg div:nth-child(4) {
-  top: 20%;
-  left: 60%;
-  animation: animate 15s linear infinite;
-}
-#intro-bg div:nth-child(5) {
-  top: 67%;
-  left: 10%;
-  animation: animate 6s linear infinite;
-}
-#intro-bg div:nth-child(6) {
-  top: 80%;
-  left: 70%;
-  animation: animate 12s linear infinite;
-}
-#intro-bg div:nth-child(7) {
-  top: 60%;
-  left: 80%;
-  animation: animate 15s linear infinite;
-}
-#intro-bg div:nth-child(8) {
-  top: 32%;
-  left: 25%;
-  animation: animate 16s linear infinite;
-}
-#intro-bg div:nth-child(9) {
-  top: 90%;
-  left: 25%;
-  animation: animate 9s linear infinite;
-}
-#intro-bg div:nth-child(10) {
-  top: 20%;
-  left: 80%;
-  animation: animate 5s linear infinite;
 }
 
 #prevBtn,
@@ -105,7 +53,9 @@ html {
   transition: 0.5s;
 }
 
-.contact {
+.contact,
+.projects,
+.skills {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -238,15 +188,6 @@ footer {
   transition: 1s;
 }
 
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-
 .skills-container {
   display: flex;
   flex-direction: column;
@@ -298,16 +239,6 @@ footer {
   padding: 0.5rem 1rem;
 }
 
-.projects {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
-}
-
 .projects h1,
 .contact h1 {
   margin-top: 7rem;
@@ -324,24 +255,15 @@ footer {
 
 .projects h1:before,
 .contact h1:before,
-.skills h1:before {
-  align-self: center;
-  content: "";
-  border-top: 2px solid;
-  margin-right: 2rem;
-  flex: 1 0 10px;
-  box-shadow: 0px 0px 2px var(--primary-color);
-}
-
+.skills h1:before,
 .projects h1:after,
 .contact h1:after,
 .skills h1:after {
   align-self: center;
   content: "";
   border-top: 2px solid;
-  margin-left: 2rem;
+  margin-inline: 2rem;
   flex: 1 0 10px;
-  box-shadow: 0px 0px 2px var(--primary-color);
   box-shadow: 0px 0px 2px var(--primary-color);
 }
 
