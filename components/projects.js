@@ -87,13 +87,13 @@ export const loadProjects = () => {
     p.innerHTML = description;
 
     const codeLink = document.createElement("a");
-    codeLink.classList = "carousel-button one";
+    codeLink.classList = "carousel-button code";
     codeLink.href = code;
     codeLink.innerText = "Code";
     codeLink.target = "_blank";
 
     const demoLink = document.createElement("a");
-    demoLink.classList = "carousel-button two";
+    demoLink.classList = "carousel-button demo";
     demoLink.href = demo;
     demoLink.innerText = "Demo";
     demoLink.target = "_blank";
