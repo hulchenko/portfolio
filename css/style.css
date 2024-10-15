@@ -25,7 +25,7 @@ html {
   width: 2rem;
   height: 2rem;
   border: 1px solid var(--primary-color);
-  border-radius: 50%;
+  border-radius: 50px;
   background-color: var(--primary-color);
 }
 
@@ -130,7 +130,7 @@ html {
 }
 
 .resume a {
-  font-size: 180px;
+  font-size: 11.25rem;
 }
 .resume a:hover {
   animation: shake 0.5s;
@@ -139,8 +139,8 @@ html {
 .resume h4 {
   position: relative;
   transform: rotate(-15deg);
-  right: 80px;
-  top: 10px;
+  right: 5rem;
+  top: 0.5rem;
   border: 1px solid var(--secondary-color);
   background-color: var(--primary-color);
   color: var(--secondary-color);
@@ -157,7 +157,7 @@ html {
 
 .all-contact-buttons li {
   list-style: none;
-  font-size: 55px;
+  font-size: 3.5rem;
 }
 
 hr {
@@ -208,7 +208,7 @@ footer {
 #bio {
   opacity: 0;
   transition: 1s;
-  line-height: 30px;
+  line-height: 2rem;
   font-size: 1.1rem;
   text-align: justify;
 }
@@ -267,14 +267,14 @@ footer {
   background-color: #fff;
   border-radius: 50px;
   width: 5rem;
-  padding: 5px;
+  padding: 0.5rem;
   height: 5rem;
   transition: 1s;
   filter: grayscale(100%);
 }
 
 .skills-container img:hover {
-  transform: scale(1.7) rotate(5deg) translate(0px, -10px);
+  transform: scale(1.5) rotate(5deg) translate(0px, -10px);
   filter: grayscale(0%);
   box-shadow: 0px 0px 15px var(--primary-color);
   transition: 1s;
@@ -309,34 +309,39 @@ footer {
 }
 
 .projects h1,
+.contact h1 {
+  margin-top: 7rem;
+}
+
+.projects h1,
 .contact h1,
 .skills h1 {
-  margin-top: 7rem;
   display: flex;
   justify-content: center;
   text-shadow: 0px 0px 2px var(--primary-color);
   width: 50%;
 }
+
 .projects h1:before,
 .contact h1:before,
 .skills h1:before {
   align-self: center;
   content: "";
   border-top: 2px solid;
-  margin: 0 30px 0 0;
+  margin-right: 2rem;
   flex: 1 0 10px;
   box-shadow: 0px 0px 2px var(--primary-color);
 }
+
 .projects h1:after,
 .contact h1:after,
 .skills h1:after {
   align-self: center;
   content: "";
   border-top: 2px solid;
-  margin: 0 30px 0 0;
+  margin-left: 2rem;
   flex: 1 0 10px;
   box-shadow: 0px 0px 2px var(--primary-color);
-  margin: 0 0 0 30px;
   box-shadow: 0px 0px 2px var(--primary-color);
 }
 
@@ -498,14 +503,17 @@ a {
     color: var(--primary-color);
   }
 
+  #prevBtn,
+  #nextBtn {
+    top: 50%;
+  }
+
   #prevBtn {
     left: 0.5rem;
-    top: 50%;
   }
 
   #nextBtn {
     right: 0.5rem;
-    top: 50%;
   }
 
   #carousel-container {
@@ -561,10 +569,10 @@ a {
   }
 
   .email a {
-    font-size: 30px;
+    font-size: 2rem;
   }
   .email h4 {
-    right: 150px;
+    right: 9rem;
   }
 
   .carousel-card img {
