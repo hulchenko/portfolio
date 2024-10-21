@@ -54,6 +54,12 @@ const skills = [
     section: "back-end",
   },
   {
+    name: "Express.js",
+    src: "./images/svg/express-js.svg",
+    alt: "express_js",
+    section: "back-end",
+  },
+  {
     name: "Python",
     src: "./images/svg/python.svg",
     alt: "python",

@@ -11,6 +11,15 @@ const projects = [
     code: "https://github.com/hulchenko/nextjs-calorie-tracker",
     demo: "https://nextjs-calorie-tracker-woad.vercel.app/",
   },
+  {
+    src: "./images/carousel/mortgage_calculator.jpg",
+    title: "Mortgage Calculator API",
+    tools: "JS, Express.js, CSS",
+    description:
+      "Comprehensive mortgage calculator featuring the ability to generate detailed CSV reports for easy tracking and analysis of mortgage payments.",
+    code: "https://github.com/hulchenko/mortgage-calculator-api",
+    demo: "https://mortgage-calculator-api-ten.vercel.app/",
+  },
   // {
   //   src: "./images/carousel/boombox.jpg",
   //   title: "BoomBox App",
@@ -42,8 +51,7 @@ const projects = [
     src: "./images/carousel/etch-a-sketch.jpg",
     title: "Etch-A-Sketch",
     tools: "JS, CSS, HTML",
-    description:
-      "Good old Etch-A-Sketch game, but improved! Supports grid selection(1-100). Random color support (Rainbow option). Reset button to start anew.",
+    description: "Good old Etch-A-Sketch game, but improved! Supports grid selection(1-100).",
     code: "https://github.com/hulchenko/etch-a-sketch-project",
     demo: "https://hulchenko.github.io/etch-a-sketch-project/",
   },
@@ -51,20 +59,10 @@ const projects = [
     src: "./images/carousel/calculator.jpg",
     title: "Calculator",
     tools: "JS, CSS, HTML",
-    description:
-      "Default calculator. Backspace button support. Various tweaks to match the real calculator behavior.",
+    description: "Default calculator.",
     code: "https://github.com/hulchenko/calculator-project",
     demo: "https://hulchenko.github.io/calculator-project/",
   },
-  // {
-  //   src: "./images/carousel/mortgage-calculator.jpg",
-  //   title: "Mortgage Calculator",
-  //   tools: "React, CSS, API",
-  //   description:
-  //     "Loan calculator with various calculating functionalities. Friendly daily advises fetched from API.",
-  //   code: "https://github.com/hulchenko/mortgage-calculator",
-  //   demo: "https://hulchenko.github.io/mortgage-calculator",
-  // },
 ];
 
 export const loadProjects = () => {
