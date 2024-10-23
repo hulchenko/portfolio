@@ -1,5 +1,7 @@
 const getSkills = async () => {
-  const response = await fetch("./../data/skills.json");
+  const isLocal = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
+  const path = isLocal ? "./../data/skills.json" : "/portfolio/data/skills.json";
+  const response = await fetch(path);
   const data = await response.json();
   return data;
 };

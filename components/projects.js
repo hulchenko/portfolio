@@ -1,5 +1,7 @@
 const getProjects = async () => {
-  const response = await fetch("./../data/projects.json");
+  const isLocal = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
+  const path = isLocal ? "./../data/projects.json" : "/portfolio/data/projects.json";
+  const response = await fetch(path);
   const data = await response.json();
   return data;
 };
