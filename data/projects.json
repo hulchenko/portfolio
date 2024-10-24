@@ -1,6 +1,6 @@
 [
   {
-    "src": "./images/carousel/calorie-tracker.png",
+    "src": "./images/carousel/calorie-tracker.jpg",
     "title": "Calorie Tracker",
     "tools": "TypeScript, NextJS, Tailwind, Neon PostgreSQL, Chakra UI",
     "description": "Allows you to track your daily and weekly calorie intake and manage your health goals. Custom authentication control with profile management.",
