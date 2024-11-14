@@ -8,20 +8,28 @@
     "demo": "https://nextjs-calorie-tracker-woad.vercel.app/"
   },
   {
-    "src": "./images/carousel/mortgage_calculator.jpg",
-    "title": "Mortgage Calculator API",
-    "tools": "JS, ExpressJS, CSS",
-    "description": "Comprehensive mortgage calculator featuring the ability to generate detailed CSV reports for easy tracking and analysis of mortgage payments.",
-    "code": "https://github.com/hulchenko/mortgage-calculator-api",
-    "demo": "https://mortgage-calculator-api-ten.vercel.app/"
-  },
-  {
     "src": "./images/carousel/covid-19-tracker.png",
     "title": "COVID-19 Tracker",
     "tools": "Vite, Vue, Tailwind, RapidAPI",
     "description": "Fetching worldwide current Covid-19 data. Responsive, with drop down country choice.",
     "code": "https://github.com/hulchenko/vue-covid-19",
     "demo": "https://vue-covid-19-seven.vercel.app"
+  },
+  {
+    "src": "./images/carousel/junk-shack.jpg",
+    "title": "Junk Shack",
+    "tools": "TypeScript, Angular, RxJS, Tailwind, MongoDB, Firebase, ExpressJS",
+    "description": "An e-commerce application for buying and selling pre-owned goods.",
+    "code": "https://github.com/hulchenko/angular-junk-shack",
+    "demo": "https://angular-junk-shack.onrender.com/"
+  },
+  {
+    "src": "./images/carousel/mortgage_calculator.jpg",
+    "title": "Mortgage Calculator API",
+    "tools": "JS, ExpressJS, CSS",
+    "description": "Comprehensive mortgage calculator featuring the ability to generate detailed CSV reports for easy tracking and analysis of mortgage payments.",
+    "code": "https://github.com/hulchenko/mortgage-calculator-api",
+    "demo": "https://mortgage-calculator-api-ten.vercel.app/"
   },
   {
     "src": "./images/carousel/boombox.jpg",
