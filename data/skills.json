@@ -13,6 +13,7 @@
   { "name": "MongoDB", "src": "./images/svg/mongodb.svg", "alt": "mongodb", "section": "back-end" },
   { "name": "Firebase", "src": "./images/svg/firebase-2.svg", "alt": "firebase", "section": "back-end" },
   { "name": "Azure", "src": "./images/svg/azure-1.svg", "alt": "azure", "section": "back-end" },
+  { "name": "Redux", "src": "./images/svg/redux.svg", "alt": "redux", "section": "misc" },
   { "name": "Xcode", "src": "./images/svg/xcode.svg", "alt": "xcode", "section": "misc" },
   { "name": "Android Studio", "src": "./images/svg/android-studio.svg", "alt": "android-studio", "section": "misc" },
   { "name": "Jenkins", "src": "./images/svg/jenkins.svg", "alt": "jenkins", "section": "misc" },
