@@ -9,36 +9,60 @@ const getProjects = async () => {
 export const loadProjects = async () => {
   const projects = await getProjects();
   projects.forEach((project) => {
-    const { src, title, tools, description, code, demo } = project;
+    const { src, title, tools, description, size, code, demo } = project;
 
-    const div = document.createElement("div");
-    div.className = "carousel-card";
+    // Card content
+    const cardHeader = document.createElement("div");
+    cardHeader.className = "project-card-header";
 
-    const img = document.createElement("img");
-    img.src = src;
+    const cardImg = document.createElement("div");
+    cardImg.className = "project-card-img";
+    cardImg.style.backgroundImage = `url(${src})`;
+    cardHeader.appendChild(cardImg);
 
-    const h2 = document.createElement("h2");
-    h2.innerHTML = title;
+    const cardText = document.createElement("div");
+    cardText.className = "project-card-text";
+    const h3 = document.createElement("h3");
+    h3.innerHTML = title;
+    const descP = document.createElement("p");
+    descP.innerHTML = description;
+    const toolsP = document.createElement("h5");
+    toolsP.innerHTML = tools;
+    cardText.append(h3, descP, toolsP);
+    cardHeader.appendChild(cardText);
 
-    const h5 = document.createElement("h5");
-    h5.innerHTML = tools;
+    const cardFooter = document.createElement("div");
+    cardFooter.className = "project-card-footer";
 
-    const p = document.createElement("p");
-    p.innerHTML = description;
+    const codeBtn = document.createElement("a");
+    codeBtn.classList = "project-card-button";
+    codeBtn.href = code;
+    codeBtn.innerText = "Code";
+    codeBtn.target = "_blank";
 
-    const codeLink = document.createElement("a");
-    codeLink.classList = "carousel-button code";
-    codeLink.href = code;
-    codeLink.innerText = "Code";
-    codeLink.target = "_blank";
+    const demoBtn = document.createElement("a");
+    demoBtn.classList = "project-card-button";
+    demoBtn.href = demo;
+    demoBtn.innerText = "Demo";
+    demoBtn.target = "_blank";
 
-    const demoLink = document.createElement("a");
-    demoLink.classList = "carousel-button demo";
-    demoLink.href = demo;
-    demoLink.innerText = "Demo";
-    demoLink.target = "_blank";
+    cardFooter.append(codeBtn, demoBtn);
 
-    div.append(img, h2, h5, p, codeLink, demoLink);
-    document.getElementById("carousel-container").appendChild(div);
+    // Card wrapper
+    const projectCard = document.createElement("div");
+    projectCard.className = "project-card";
+    projectCard.append(cardHeader, cardFooter);
+
+    // Split projects into the appropriate row
+    const mainRow = document.querySelector(".main-project-row");
+    const smallRow = document.querySelector(".small-project-row");
+
+    if (size === "small") {
+      smallRow.appendChild(projectCard);
+    } else {
+      mainRow.appendChild(projectCard);
+    }
+
+    document.querySelector(".projects-grid").append(mainRow, smallRow);
   });
 };

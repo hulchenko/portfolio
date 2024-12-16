@@ -1,74 +1,92 @@
 [
   {
-    "src": "./images/carousel/calorie-tracker.jpg",
-    "title": "Calorie Tracker",
-    "tools": "TypeScript, NextJS, Tailwind, Neon PostgreSQL, Chakra UI",
-    "description": "Allows you to track your daily and weekly calorie intake and manage your health goals. Custom authentication control with profile management.",
+    "src": "./images/projects/calorie-tracker.jpg",
+    "title": "PENN Calorie Tracker",
+    "tools": "TypeScript, NextJS, Neon PostgreSQL, ChakraUI, Tailwind",
+    "description": "Calorie Tracker allows you to track your daily calorie intake and manage your health goals. It provides a user-friendly interface for logging meals, monitoring progress, and maintaining a healthy lifestyle.",
     "code": "https://github.com/hulchenko/nextjs-calorie-tracker",
-    "demo": "https://nextjs-calorie-tracker-woad.vercel.app/"
+    "demo": "https://nextjs-calorie-tracker-woad.vercel.app/",
+    "size": "big"
   },
   {
-    "src": "./images/carousel/junk-shack.jpg",
-    "title": "Junk Shack",
-    "tools": "TypeScript, Angular, RxJS, Tailwind, MongoDB, Firebase, ExpressJS",
-    "description": "An e-commerce application for buying and selling pre-owned goods.",
+    "src": "./images/projects/junk-shack.jpg",
+    "title": "MEAN Junk Shack",
+    "tools": "TypeScript, Angular, RxJS, MongoDB, Firebase, ExpressJS, Tailwind",
+    "description": "Junk Shack is an e-commerce application for buying and selling pre-owned goods. The app offers a streamlined interface for browsing products, managing a shopping cart, handling orders, and maintaining an account. Built with modern web technologies, Junk Shack aims to make the resale of used items accessible and user-friendly.",
     "code": "https://github.com/hulchenko/angular-junk-shack",
-    "demo": "https://angular-junk-shack.onrender.com/"
+    "demo": "https://angular-junk-shack.onrender.com/",
+    "size": "big"
   },
   {
-    "src": "./images/carousel/mortgage_calculator.jpg",
-    "title": "Mortgage Calculator API",
+    "src": "./images/projects/bookstore.jpg",
+    "title": "MERN BookStore App",
+    "tools": "TypeScript, React, Redux, MongoDB, Express, AWS, NextUI, Tailwind",
+    "description": "BookStore is an advanced e-commerce web application tailored for book enthusiasts. It combines elegant design, powerful features, and smooth functionality to deliver a premium shopping experience. Built with modern technologies, it boasts responsiveness, secure payment options, and dynamic user and admin controls.",
+    "code": "https://github.com/hulchenko/MERN-bookstore",
+    "demo": "https://mern-bookstore-o4c8.onrender.com/",
+    "size": "big"
+  },
+  {
+    "src": "./images/projects/mortgage_calculator.jpg",
+    "title": "Mortgage Calculator",
     "tools": "JS, ExpressJS, CSS",
-    "description": "Comprehensive mortgage calculator featuring the ability to generate detailed CSV reports for easy tracking and analysis of mortgage payments.",
+    "description": "Mortgage Calculator provides functionality to calculate mortgage payment schedules and generate CSV reports of the mortgage payment breakdown. The API takes into account variables such as the principal loan amount, interest rate, amortization period, term, and optional deposit, returning a detailed payment schedule and cost summary.",
     "code": "https://github.com/hulchenko/mortgage-calculator-api",
-    "demo": "https://mortgage-calculator-api-ten.vercel.app/"
+    "demo": "https://mortgage-calculator-api-ten.vercel.app/",
+    "size": "medium"
   },
   {
-    "src": "./images/carousel/boombox.png",
+    "src": "./images/projects/boombox.png",
     "title": "BoomBox App",
     "tools": "React, SASS",
-    "description": "Play/pause/skip/skip-back/auto-play functionality. Nav bar 'Library', with responsive on-click functionality to switch songs. Mobile friendly.",
+    "description": "BoomBox is a simple yet visually appealing music player application that allows users to play their favourite songs, skip between tracks, pause, and navigate through the song timeline. With a clean interface and smooth controls, BoomBox provides an intuitive and enjoyable experience for music lovers.",
     "code": "https://github.com/hulchenko/react-music-app",
-    "demo": "https://kind-aryabhata-44a21e.netlify.app/"
+    "demo": "https://kind-aryabhata-44a21e.netlify.app/",
+    "size": "medium"
   },
   {
-    "src": "./images/carousel/covid-19-tracker.png",
+    "src": "./images/projects/covid-19-tracker.png",
     "title": "COVID-19 Tracker",
-    "tools": "Vite, Vue, Tailwind, RapidAPI",
-    "description": "Fetching worldwide current Covid-19 data. Responsive, with drop down country choice.",
+    "tools": "Vue, Tailwind, RapidAPI",
+    "description": "COVID-19 Tracker provides real-time COVID-19 statistics by country, allowing users to track confirmed cases, deaths, recoveries, and critical data globally. Using the RapidAPI COVID-19 Data API, the app fetches the latest information and presents it in an easy-to-read format.",
     "code": "https://github.com/hulchenko/vue-covid-19",
-    "demo": "https://vue-covid-19-seven.vercel.app"
+    "demo": "https://vue-covid-19-seven.vercel.app",
+    "size": "medium"
   },
   {
-    "src": "./images/carousel/calculator.png",
-    "title": "Calculator",
-    "tools": "JS, CSS, HTML",
-    "description": "Simple yet functional calculator application.",
-    "code": "https://github.com/hulchenko/calculator-project",
-    "demo": "https://hulchenko.github.io/calculator-project/"
-  },
-  {
-    "src": "./images/carousel/etch-a-sketch.png",
-    "title": "Etch-A-Sketch",
-    "tools": "JS, CSS, HTML",
-    "description": "Good old Etch-A-Sketch game, but improved! Supports grid selection(1-100).",
-    "code": "https://github.com/hulchenko/etch-a-sketch-project",
-    "demo": "https://hulchenko.github.io/etch-a-sketch-project/"
-  },
-  {
-    "src": "./images/carousel/speech-recognition.png",
+    "src": "./images/projects/speech-recognition.png",
     "title": "Speech Recognition",
     "tools": "JS, Web Speech API",
-    "description": "Real-time speech recognition.",
+    "description": "This simple app demonstrates how to use the Web Speech API for real-time speech recognition. Speak into your microphone, and watch as the app transcribes your words into text on the screen.",
     "code": "https://github.com/hulchenko/speech-recognition",
-    "demo": "https://hulchenko.github.io/speech-recognition/"
+    "demo": "https://hulchenko.github.io/speech-recognition/",
+    "size": "small"
   },
   {
-    "src": "./images/carousel/file-upload.jpg",
+    "src": "./images/projects/file-upload.jpg",
     "title": "Image File Uploader",
     "tools": "Node.js, Firebase",
     "description": "Image Uploading plugin. Upload, view, delete items. Multiple choice support. Loading bar, description field. Supports PNG, JPG, JPEG types.",
     "code": "https://github.com/hulchenko/file-uploader",
-    "demo": "https://vigorous-wright-e2ac02.netlify.app/"
+    "demo": "https://vigorous-wright-e2ac02.netlify.app/",
+    "size": "small"
+  },
+  {
+    "src": "./images/projects/etch-a-sketch.png",
+    "title": "Etch-A-Sketch",
+    "tools": "JS, CSS, HTML",
+    "description": "This project is a digital recreation of the classic Etch-a-Sketch toy, allowing users to draw on a customizable grid using their mouse. The app provides multiple colour modes, grid resizing options, and a reset feature for a versatile drawing experience.",
+    "code": "https://github.com/hulchenko/etch-a-sketch-project",
+    "demo": "https://hulchenko.github.io/etch-a-sketch-project/",
+    "size": "small"
+  },
+  {
+    "src": "./images/projects/calculator.png",
+    "title": "Calculator",
+    "tools": "JS, CSS, HTML",
+    "description": "Simple yet functional calculator application.",
+    "code": "https://github.com/hulchenko/calculator-project",
+    "demo": "https://hulchenko.github.io/calculator-project/",
+    "size": "small"
   }
 ]
