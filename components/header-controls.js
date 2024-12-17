@@ -1,46 +1,45 @@
-const theme = document.getElementById("theme");
 const themeIcon = document.getElementById("theme-icon");
-const up = document.getElementById("up");
+const up = document.getElementById("up-icon");
 const container = document.getElementById("main-container");
 
-const darkEnable = () => {
-  container.classList.add("dark");
-  localStorage.setItem("darkMode", "enabled");
+const lightEnable = () => {
+  container.classList.add("light");
+  localStorage.setItem("lightMode", "enabled");
   toggleThemeIcon(true);
 };
 
-const darkDisable = () => {
-  container.classList.remove("dark");
-  localStorage.removeItem("darkMode");
+const lightDisable = () => {
+  container.classList.remove("light");
+  localStorage.removeItem("lightMode");
   toggleThemeIcon(false);
 };
 
-const toggleThemeIcon = (isDarkModeEnabled) => {
-  themeIcon.className = isDarkModeEnabled
-    ? "fas fa-toggle-on"
-    : "fas fa-toggle-off";
+const toggleThemeIcon = (isLightModeEnabled) => {
+  if (isLightModeEnabled) {
+    themeIcon.setAttribute("src", "./images/svg/icons/dark-mode.svg");
+  } else {
+    themeIcon.setAttribute("src", "./images/svg/icons/light-mode.svg");
+  }
 };
 
 // init load
-const isDark = localStorage.getItem("darkMode");
-if (isDark) {
-  darkEnable();
+const isLight = localStorage.getItem("lightMode");
+if (isLight) {
+  lightEnable();
 } else {
-  darkDisable();
+  lightDisable();
 }
 
 const themeToggle = () => {
-  const isDark = localStorage.getItem("darkMode");
-  if (isDark) {
-    darkDisable();
+  const isLight = localStorage.getItem("lightMode");
+  if (isLight) {
+    lightDisable();
   } else {
-    darkEnable();
+    lightEnable();
   }
 };
 
 export const useHeaderControls = () => {
-  theme.addEventListener("click", () => {
-    themeToggle();
-  });
+  themeIcon.addEventListener("click", () => themeToggle());
   up.addEventListener("click", () => window.scrollTo(0, 0));
 };
