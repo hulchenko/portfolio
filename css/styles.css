@@ -164,7 +164,7 @@ a {
 .skills-container img:hover {
   transform: scale(1.5) rotate(5deg) translate(0px, -10px);
   filter: grayscale(0%);
-  box-shadow: 0px 0px 15px var(--primary-color);
+  box-shadow: 0px 0px 5px var(--primary-color);
   transition: 0.3s ease-in-out;
 }
 
