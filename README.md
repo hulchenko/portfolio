@@ -1,6 +1,4 @@
-Personal Portfolio Website
-
-[LIVE DEMO](https://hulchenko.github.io/portfolio/)
+## [Personal Portfolio Website](https://hulchenko.github.io/portfolio/)
 
 🛠️ Built with
 
@@ -10,10 +8,9 @@ Personal Portfolio Website
 
 💡 Features
 
-- Project Carousel
+- Personal Projects Highlight
 - Dark/Light Mode
-- Typing effect with Typed.js
-- Responsive Shadow
+- Custom typing effect
 - Animated Background
 - Dynamic Avatar
-- Responsive on mobile
+- Small screens support
