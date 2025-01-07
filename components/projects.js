@@ -54,15 +54,18 @@ export const loadProjects = async () => {
     projectCard.append(cardHeader, cardFooter);
 
     // Split projects into the appropriate row
-    const mainRow = document.querySelector(".main-project-row");
+    const bigRow = document.querySelector(".big-project-row");
+    const mediumRow = document.querySelector(".medium-project-row");
     const smallRow = document.querySelector(".small-project-row");
 
     if (size === "small") {
       smallRow.appendChild(projectCard);
+    } else if (size === "medium") {
+      mediumRow.appendChild(projectCard);
     } else {
-      mainRow.appendChild(projectCard);
+      bigRow.appendChild(projectCard);
     }
 
-    document.querySelector(".projects-grid").append(mainRow, smallRow);
+    document.querySelector(".projects-grid").append(bigRow, mediumRow, smallRow);
   });
 };

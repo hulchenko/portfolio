@@ -27,6 +27,15 @@
     "size": "big"
   },
   {
+    "src": "./images/projects/django-wordle.jpg",
+    "title": "Django Wordle Game",
+    "tools": "React, Django + REST, PostgreSQL",
+    "description": "Wordle Game is an engaging, browser-based word guessing game inspired by the popular daily challenge. The app offers a smooth user experience with real-time interaction, highlights, and scoring features. Built with modern technologies, it is fully responsive and integrates with Django and React for seamless front-end and back-end communication.",
+    "code": "https://github.com/hulchenko/django-react-wordle",
+    "demo": "https://django-react-wordle.vercel.app/",
+    "size": "medium"
+  },
+  {
     "src": "./images/projects/mortgage_calculator.jpg",
     "title": "Mortgage Calculator",
     "tools": "JS, ExpressJS, CSS",
@@ -48,34 +57,25 @@
     "src": "./images/projects/covid-19-tracker.png",
     "title": "COVID-19 Tracker",
     "tools": "Vue, Tailwind, RapidAPI",
-    "description": "COVID-19 Tracker provides real-time COVID-19 statistics by country, allowing users to track confirmed cases, deaths, recoveries, and critical data globally. Using the RapidAPI COVID-19 Data API, the app fetches the latest information and presents it in an easy-to-read format.",
+    "description": "Using the RapidAPI COVID-19 Data API, the app fetches the latest information and presents it in an easy-to-read format.",
     "code": "https://github.com/hulchenko/vue-covid-19",
     "demo": "https://vue-covid-19-seven.vercel.app",
-    "size": "medium"
+    "size": "small"
   },
   {
     "src": "./images/projects/speech-recognition.png",
     "title": "Speech Recognition",
     "tools": "JS, Web Speech API",
-    "description": "This simple app demonstrates how to use the Web Speech API for real-time speech recognition. Speak into your microphone, and watch as the app transcribes your words into text on the screen.",
+    "description": "This simple app demonstrates how to use the Web Speech API for real-time speech recognition.",
     "code": "https://github.com/hulchenko/speech-recognition",
     "demo": "https://hulchenko.github.io/speech-recognition/",
-    "size": "small"
-  },
-  {
-    "src": "./images/projects/file-upload.jpg",
-    "title": "Image File Uploader",
-    "tools": "Node.js, Firebase",
-    "description": "Image Uploading plugin. Upload, view, delete items. Multiple choice support. Loading bar, description field. Supports PNG, JPG, JPEG types.",
-    "code": "https://github.com/hulchenko/file-uploader",
-    "demo": "https://vigorous-wright-e2ac02.netlify.app/",
     "size": "small"
   },
   {
     "src": "./images/projects/etch-a-sketch.png",
     "title": "Etch-A-Sketch",
     "tools": "JS, CSS, HTML",
-    "description": "This project is a digital recreation of the classic Etch-a-Sketch toy, allowing users to draw on a customizable grid using their mouse. The app provides multiple colour modes, grid resizing options, and a reset feature for a versatile drawing experience.",
+    "description": "This project is a digital recreation of the classic Etch-a-Sketch toy, allowing users to draw on a customizable grid using their mouse.",
     "code": "https://github.com/hulchenko/etch-a-sketch-project",
     "demo": "https://hulchenko.github.io/etch-a-sketch-project/",
     "size": "small"
@@ -87,6 +87,15 @@
     "description": "Simple yet functional calculator application.",
     "code": "https://github.com/hulchenko/calculator-project",
     "demo": "https://hulchenko.github.io/calculator-project/",
+    "size": "small"
+  },
+  {
+    "src": "./images/projects/file-upload.jpg",
+    "title": "Image File Uploader",
+    "tools": "Node.js, Firebase",
+    "description": "Image Uploading plugin. Upload, view, delete items. Multiple choice support. Loading bar, description field.",
+    "code": "https://github.com/hulchenko/file-uploader",
+    "demo": "https://vigorous-wright-e2ac02.netlify.app/",
     "size": "small"
   }
 ]
