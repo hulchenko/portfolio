@@ -129,7 +129,7 @@ a {
 
 #profile-pic:hover {
   cursor: pointer;
-  transform: scale(1.1);
+  transform: scale(1.05);
   transition: 0.3s ease-in-out;
 }
 
@@ -294,10 +294,13 @@ a {
   cursor: pointer;
   font-weight: bold;
   color: var(--secondary-color);
+  padding: 5px;
 }
 
 .project-card-button:hover {
   transform: scale(1.1);
+  border-radius: 5px;
+  box-shadow: 0 0 5px var(--secondary-color);
 }
 
 /* Contact section */
