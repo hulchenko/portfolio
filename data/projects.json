@@ -9,6 +9,15 @@
     "size": "big"
   },
   {
+    "src": "./images/projects/bookstore.jpg",
+    "title": "MERN BookStore App",
+    "tools": "TypeScript, React, Redux, MongoDB, Express, AWS, NextUI, Tailwind",
+    "description": "BookStore is an advanced e-commerce web application tailored for book enthusiasts. It combines elegant design, powerful features, and smooth functionality to deliver a premium shopping experience. Built with modern technologies, it boasts responsiveness, secure payment options, and dynamic user and admin controls.",
+    "code": "https://github.com/hulchenko/MERN-bookstore",
+    "demo": "https://mern-bookstore-o4c8.onrender.com/",
+    "size": "big"
+  },
+  {
     "src": "./images/projects/junk-shack.jpg",
     "title": "MEAN Junk Shack",
     "tools": "TypeScript, Angular, RxJS, MongoDB, Firebase, ExpressJS, Tailwind",
@@ -18,13 +27,13 @@
     "size": "big"
   },
   {
-    "src": "./images/projects/bookstore.jpg",
-    "title": "MERN BookStore App",
-    "tools": "TypeScript, React, Redux, MongoDB, Express, AWS, NextUI, Tailwind",
-    "description": "BookStore is an advanced e-commerce web application tailored for book enthusiasts. It combines elegant design, powerful features, and smooth functionality to deliver a premium shopping experience. Built with modern technologies, it boasts responsiveness, secure payment options, and dynamic user and admin controls.",
-    "code": "https://github.com/hulchenko/MERN-bookstore",
-    "demo": "https://mern-bookstore-o4c8.onrender.com/",
-    "size": "big"
+    "src": "./images/projects/chat-app.jpg",
+    "title": "Chat App",
+    "tools": "MERN, Socket.io, Redis, Tailwind",
+    "description": "ChatApp is a modern, real-time chat application built for seamless communication. It leverages powerful WebSocket technology to enable private messaging and room-based interactions, with a robust backend and an elegant, responsive frontend.",
+    "code": "https://github.com/hulchenko/MERN-chat-app",
+    "demo": "https://mern-chat-app-eight-xi.vercel.app/",
+    "size": "medium"
   },
   {
     "src": "./images/projects/django-wordle.jpg",
