@@ -159,6 +159,7 @@ a {
   height: 5rem;
   transition: 1s;
   filter: grayscale(100%);
+  object-fit: contain;
 }
 
 .skills-container img:hover {
@@ -298,8 +299,7 @@ a {
 }
 
 .project-card-button:hover {
-  border-radius: 5px;
-  box-shadow: 0 0 2px var(--secondary-color);
+  text-shadow: 0 0 2px var(--secondary-color);
 }
 
 /* Contact section */
